@@ -167,6 +167,6 @@ already captures its own state.
 
 Apache License 2.0. See [LICENSE](./LICENSE) for the full text.
 
-The names "Quill", "Quill", and the project's logos are trademarks of
+The names "Quill" and the project's logos are trademarks of
 Yash Raj Sharan and are not licensed under Apache 2.0; their use is governed
 separately.

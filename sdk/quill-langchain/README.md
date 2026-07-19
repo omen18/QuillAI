@@ -242,6 +242,6 @@ elsewhere on the same machine.
 Apache License 2.0. See [LICENSE](./LICENSE) for the full text, or the
 [repository-level LICENSE](../../LICENSE) for the path-to-license map.
 
-The names "Quill", "Quill", and the project's logos are trademarks of
+The names "Quill" and the project's logos are trademarks of
 Yash Raj Sharan and are not licensed under Apache 2.0; their use is governed
 separately.
