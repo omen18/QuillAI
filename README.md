@@ -1,18 +1,14 @@
-<div align="center" id="top">
-<a href="https://github.com/omen18/QuillAI">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./misc/quill_logo_white.png">
-    <img src="./misc/quill_logo.png" width="300px" alt="Quill">
-  </picture>
-</a>
 
 ### Quill — Open-source GenBI: generative BI for AI agents.
 
+<img width="1088" height="610" alt="image" src="https://github.com/user-attachments/assets/4b982b59-97c4-4938-ad6d-b9c9496f3773" />
+
+
 *Your agents generate, deploy, and govern dashboards from any database, grounded in a context layer they can actually trust.*
 
-[Docs](https://github.com/omen18/QuillAI/tree/main/docs) · [Discord](https://discord.gg/5DvshJqG8Z) · [Vision](https://github.com/omen18/QuillAI) · [Blog](https://github.com/omen18/QuillAI)
+[Docs](https://github.com/omen18/QuillAI/tree/main/docs) · [Vision](https://github.com/omen18/QuillAI) · [Blog](https://github.com/omen18/QuillAI)
 
-[![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
+
 [![GitHub Release](https://img.shields.io/github/v/release/omen18/QuillAI?logo=github&label=release)](https://github.com/omen18/QuillAI/releases)
 [![Last commit](https://img.shields.io/github/last-commit/omen18/QuillAI)](https://github.com/omen18/QuillAI/commits/main)
 [![Made by Yash Raj Sharan](https://img.shields.io/badge/made_by-Yash_Raj_Sharan-blue)](https://github.com/omen18)
@@ -246,7 +242,7 @@ examples/            Example projects
 
 ## License
 
-Apache 2.0. See [LICENSE](./LICENSE).
+Yash Raj Sharan
 
 ---
 
