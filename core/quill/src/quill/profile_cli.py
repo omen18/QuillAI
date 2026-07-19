@@ -277,7 +277,7 @@ def _flatten_connection_envelope(raw: dict) -> dict:
             raise ValueError(
                 f"Unexpected nested key(s) {unknown_nested!r}. "
                 "Connection fields must be flat — see "
-                "https://github.com/omen18/Quill/tree/main/docs/oss/engine/guide/profiles for the "
+                "https://github.com/omen18/QuillAI/tree/main/docs/oss/engine/guide/profiles for the "
                 "supported shapes."
             )
         flat = dict(raw)

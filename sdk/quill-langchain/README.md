@@ -1,6 +1,6 @@
 # quill-langchain
 
-LangChain and LangGraph integration for [Quill Core](https://github.com/omen18/Quill).
+LangChain and LangGraph integration for [Quill Core](https://github.com/omen18/QuillAI).
 
 Attach a CLI-prepared Quill project to a LangChain agent in three lines:
 

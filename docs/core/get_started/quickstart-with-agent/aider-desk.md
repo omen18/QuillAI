@@ -13,7 +13,7 @@ A desktop UI for the Aider coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent aider-desk
+npx skills add omen18/QuillAI --agent aider-desk
 ```
 
 ## Run onboarding

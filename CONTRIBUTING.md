@@ -5,7 +5,7 @@ Thanks for your interest in contributing. Pull requests, bug reports, and discus
 ## Before you start
 
 - Read the **[Code of Conduct](./CODE_OF_CONDUCT.md)** — it applies to all project spaces.
-- For bugs/feature requests: search [existing issues](https://github.com/omen18/Quill/issues) first; for open-ended ideas use [Discussions](https://github.com/omen18/Quill/discussions).
+- For bugs/feature requests: search [existing issues](https://github.com/omen18/QuillAI/issues) first; for open-ended ideas use [Discussions](https://github.com/omen18/QuillAI/discussions).
 - For larger changes, open a discussion before coding so we can align on direction.
 
 ## Development per module

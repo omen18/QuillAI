@@ -14,7 +14,7 @@ All-Hands open-source coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent openhands
+npx skills add omen18/QuillAI --agent openhands
 ```
 
 ## Run onboarding

@@ -13,7 +13,7 @@ The Cursor IDE.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent cursor
+npx skills add omen18/QuillAI --agent cursor
 ```
 
 ## Run onboarding

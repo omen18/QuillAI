@@ -6,7 +6,7 @@ The crate includes several examples of how to use Quill Engine APIs and help you
 To run the examples, use the `cargo run` command, such as:
 
 ```bash
-git clone https://github.com/omen18/Quill.git
+git clone https://github.com/omen18/QuillAI.git
 cd Quill/core/quill-core
 
 # Run the `datafusion_apply` example:

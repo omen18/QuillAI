@@ -20,9 +20,9 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/omen18/Quill"
-Repository = "https://github.com/omen18/Quill"
-Issues = "https://github.com/omen18/Quill/issues"
+Homepage = "https://github.com/omen18/QuillAI"
+Repository = "https://github.com/omen18/QuillAI"
+Issues = "https://github.com/omen18/QuillAI/issues"
 
 [dependency-groups]
 dev = [

@@ -1,6 +1,6 @@
 # AGENTS.md
 
-This project uses [Quill Engine](https://github.com/omen18/Quill) as the semantic layer for data querying. Queries are written against MDL model names, not raw database tables.
+This project uses [Quill Engine](https://github.com/omen18/QuillAI) as the semantic layer for data querying. Queries are written against MDL model names, not raw database tables.
 
 ## Answering data questions
 
@@ -37,7 +37,7 @@ pip install "quill[postgres,memory,ui]"
 
 Replace `postgres` with your data source (`mysql`, `bigquery`, `snowflake`, `clickhouse`, `trino`, `mssql`, `databricks`, `redshift`, `spark`, `athena`, `oracle`). The `memory` extra upgrades recall to semantic (embedding) search — without it, `memory store` / `index` / `recall` still work over the `knowledge/` files. `ui` enables the interactive UI.
 
-See https://github.com/omen18/Quill/tree/main/docs/oss/engine/get_started/installation for full setup.
+See https://github.com/omen18/QuillAI/tree/main/docs/oss/engine/get_started/installation for full setup.
 
 ## Quick reference
 

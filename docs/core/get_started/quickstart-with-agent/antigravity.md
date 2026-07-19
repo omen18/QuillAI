@@ -14,7 +14,7 @@ Google's AI development workspace.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent antigravity
+npx skills add omen18/QuillAI --agent antigravity
 ```
 
 ## Run onboarding

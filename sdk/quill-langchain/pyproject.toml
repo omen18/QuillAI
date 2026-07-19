@@ -87,11 +87,11 @@ dev = [
 ]
 
 [project.urls]
-Homepage      = "https://github.com/omen18/Quill"
-Documentation = "https://github.com/omen18/Quill/tree/main/sdk/quill-langchain#readme"
-Repository    = "https://github.com/omen18/Quill"
-Issues        = "https://github.com/omen18/Quill/issues"
-Changelog     = "https://github.com/omen18/Quill/blob/main/sdk/quill-langchain/CHANGELOG.md"
+Homepage      = "https://github.com/omen18/QuillAI"
+Documentation = "https://github.com/omen18/QuillAI/tree/main/sdk/quill-langchain#readme"
+Repository    = "https://github.com/omen18/QuillAI"
+Issues        = "https://github.com/omen18/QuillAI/issues"
+Changelog     = "https://github.com/omen18/QuillAI/blob/main/sdk/quill-langchain/CHANGELOG.md"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/quill_langchain"]

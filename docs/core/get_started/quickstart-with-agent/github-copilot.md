@@ -14,7 +14,7 @@ GitHub Copilot CLI / Coding Agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent github-copilot
+npx skills add omen18/QuillAI --agent github-copilot
 ```
 
 ## Run onboarding

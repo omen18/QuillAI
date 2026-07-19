@@ -14,7 +14,7 @@ Factory AI Droid CLI.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent droid
+npx skills add omen18/QuillAI --agent droid
 ```
 
 ## Run onboarding

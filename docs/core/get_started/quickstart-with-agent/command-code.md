@@ -13,7 +13,7 @@ Command Code agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent command-code
+npx skills add omen18/QuillAI --agent command-code
 ```
 
 ## Run onboarding

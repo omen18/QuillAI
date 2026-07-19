@@ -1,6 +1,6 @@
 # Quill Core Module
 
-The Quill Core module serves as the semantic core of the Quill engine. To understand the concept of the Quill engine, refer to the [Quill engine documentation](https://github.com/omen18/Quill/tree/main/docs/oss/engine/concept/what_is_semantics). 
+The Quill Core module serves as the semantic core of the Quill engine. To understand the concept of the Quill engine, refer to the [Quill engine documentation](https://github.com/omen18/QuillAI/tree/main/docs/oss/engine/concept/what_is_semantics). 
 
 This module is utilized by the API v3 of the ibis-server for SQL planning. Additionally, there is another module for Python bindings, [quill-core-py](../quill-core-py/), which is also used by the [ibis-server](../ibis-server/).
 

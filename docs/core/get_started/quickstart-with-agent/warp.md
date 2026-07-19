@@ -14,7 +14,7 @@ Warp terminal coding agent. Uses the shared `.agents/skills/` directory.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent warp
+npx skills add omen18/QuillAI --agent warp
 ```
 
 ## Run onboarding

@@ -13,7 +13,7 @@ Hermes coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent hermes-agent
+npx skills add omen18/QuillAI --agent hermes-agent
 ```
 
 ## Run onboarding

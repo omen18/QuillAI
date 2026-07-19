@@ -13,7 +13,7 @@ Charm's TUI coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent crush
+npx skills add omen18/QuillAI --agent crush
 ```
 
 ## Run onboarding

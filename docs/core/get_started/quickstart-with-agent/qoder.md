@@ -14,7 +14,7 @@ Qoder coding IDE.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent qoder
+npx skills add omen18/QuillAI --agent qoder
 ```
 
 ## Run onboarding

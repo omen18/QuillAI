@@ -14,7 +14,7 @@ Android JetBrains coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent firebender
+npx skills add omen18/QuillAI --agent firebender
 ```
 
 ## Run onboarding

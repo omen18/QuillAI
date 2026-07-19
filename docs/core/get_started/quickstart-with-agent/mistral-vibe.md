@@ -14,7 +14,7 @@ Mistral's Vibe coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent mistral-vibe
+npx skills add omen18/QuillAI --agent mistral-vibe
 ```
 
 ## Run onboarding

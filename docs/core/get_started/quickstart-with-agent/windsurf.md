@@ -13,7 +13,7 @@ Codeium Windsurf IDE.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent windsurf
+npx skills add omen18/QuillAI --agent windsurf
 ```
 
 ## Run onboarding

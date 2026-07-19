@@ -14,7 +14,7 @@ Huawei Cloud CodeArts Doer.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent codearts-agent
+npx skills add omen18/QuillAI --agent codearts-agent
 ```
 
 ## Run onboarding

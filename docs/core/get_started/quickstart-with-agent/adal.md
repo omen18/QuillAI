@@ -13,7 +13,7 @@ A lightweight coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent adal
+npx skills add omen18/QuillAI --agent adal
 ```
 
 ## Run onboarding

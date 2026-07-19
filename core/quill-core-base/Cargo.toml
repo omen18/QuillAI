@@ -4,8 +4,8 @@ version = "0.2.0"
 edition = "2021"
 license = "Apache-2.0"
 description = "Shared MDL manifest types for the Quill semantic engine"
-homepage = "https://github.com/omen18/Quill"
-repository = "https://github.com/omen18/Quill"
+homepage = "https://github.com/omen18/QuillAI"
+repository = "https://github.com/omen18/QuillAI"
 keywords = ["sql", "semantic-layer", "mdl", "manifest", "quill"]
 categories = ["database"]
 

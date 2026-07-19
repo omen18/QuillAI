@@ -14,7 +14,7 @@ Augment Code coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent augment
+npx skills add omen18/QuillAI --agent augment
 ```
 
 ## Run onboarding

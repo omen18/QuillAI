@@ -14,7 +14,7 @@ IBM watsonx coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent bob
+npx skills add omen18/QuillAI --agent bob
 ```
 
 ## Run onboarding

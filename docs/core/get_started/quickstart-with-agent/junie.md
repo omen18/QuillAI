@@ -14,7 +14,7 @@ JetBrains Junie.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent junie
+npx skills add omen18/QuillAI --agent junie
 ```
 
 ## Run onboarding

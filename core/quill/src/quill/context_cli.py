@@ -391,7 +391,7 @@ def init(
     typer.echo("")
     typer.echo(
         "Next: Install agent skills via "
-        "`curl -fsSL https://raw.githubusercontent.com/omen18/Quill/main/skills/install.sh | bash`, "
+        "`curl -fsSL https://raw.githubusercontent.com/omen18/QuillAI/main/skills/install.sh | bash`, "
         "then use the `quill-generate-mdl` skill in your agent to populate models/"
         " (or edit them manually). Run `quill context build` when done."
     )

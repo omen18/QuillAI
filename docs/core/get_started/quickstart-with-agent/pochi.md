@@ -13,7 +13,7 @@ Pochi coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent pochi
+npx skills add omen18/QuillAI --agent pochi
 ```
 
 ## Run onboarding

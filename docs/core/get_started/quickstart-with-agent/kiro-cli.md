@@ -14,7 +14,7 @@ AWS Kiro CLI.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent kiro-cli
+npx skills add omen18/QuillAI --agent kiro-cli
 ```
 
 ## Run onboarding

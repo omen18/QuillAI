@@ -14,7 +14,7 @@ OpenAI Codex CLI.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent codex
+npx skills add omen18/QuillAI --agent codex
 ```
 
 ## Run onboarding

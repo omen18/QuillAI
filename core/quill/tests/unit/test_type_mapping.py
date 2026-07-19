@@ -26,7 +26,7 @@ from quill.type_mapping import (
         ("INT64", "bigquery", "BIGINT"),
         ("STRING", "bigquery", "TEXT"),
         ("Nullable(UInt32)", "clickhouse", "UINT"),
-        # Nullable(T) regression — omen18/Quill#2184
+        # Nullable(T) regression — omen18/QuillAI#2184
         ("Nullable(String)", "clickhouse", "TEXT"),
         ("Nullable(Int32)", "clickhouse", "INT"),
         ("Nullable(Int64)", "clickhouse", "BIGINT"),

@@ -11,19 +11,19 @@ Get Quill running. Your AI coding agent does the rest.
 This installs a single **discovery stub** (`quill`) that teaches AI coding agents (Claude Code, Openclaw, Hermes, Codex, etc.) how to drive the Quill CLI for you:
 
 ```bash
-npx skills add omen18/Quill
+npx skills add omen18/QuillAI
 ```
 
 Have multiple AI coding agents installed and want the stub available in all of them? Pass `--agent '*'`:
 
 ```bash
-npx skills add omen18/Quill --agent '*'
+npx skills add omen18/QuillAI --agent '*'
 ```
 
 Or via the install script:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/omen18/Quill/main/skills/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/omen18/QuillAI/main/skills/install.sh | bash
 ```
 
 > **Only one skill is installed** — `quill` (at `~/.claude/skills/quill/SKILL.md` for Claude Code). This is expected. Since Quill `0.8`, the workflow guides (`onboarding`, `usage`, `generate-mdl`, `dlt-connector`, `enrich-context`) no longer install as separate skills; they live inside the `quill` CLI and the stub fetches them on demand with `quill skills get <name>`. See the [Skills reference](/oss/reference/skills) for the full delivery model and what each guide does.

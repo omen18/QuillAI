@@ -14,7 +14,7 @@ Trae (China region).
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent trae-cn
+npx skills add omen18/QuillAI --agent trae-cn
 ```
 
 ## Run onboarding

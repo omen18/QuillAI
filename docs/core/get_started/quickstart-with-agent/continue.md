@@ -13,7 +13,7 @@ Open-source IDE coding assistant.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent continue
+npx skills add omen18/QuillAI --agent continue
 ```
 
 ## Run onboarding

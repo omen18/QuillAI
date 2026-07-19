@@ -14,7 +14,7 @@ Zencoder coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent zencoder
+npx skills add omen18/QuillAI --agent zencoder
 ```
 
 ## Run onboarding

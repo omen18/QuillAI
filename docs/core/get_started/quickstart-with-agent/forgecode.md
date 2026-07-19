@@ -13,7 +13,7 @@ Forge AI coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent forgecode
+npx skills add omen18/QuillAI --agent forgecode
 ```
 
 ## Run onboarding

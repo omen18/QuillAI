@@ -1,6 +1,6 @@
 # quill-pydantic
 
-Pydantic AI integration for [Quill Core](https://github.com/omen18/Quill).
+Pydantic AI integration for [Quill Core](https://github.com/omen18/QuillAI).
 
 Attach a CLI-prepared Quill project to a Pydantic AI agent in three lines:
 
@@ -20,7 +20,7 @@ print(result.output)
 
 > ⚠️ **Quill CLI required first.** This SDK is a thin adapter over a Quill
 > project that the `quill` CLI has already prepared (profile + MDL + optional
-> memory index). Follow the [install guide](https://github.com/omen18/Quill/tree/main/docs/oss/get_started/installation)
+> memory index). Follow the [install guide](https://github.com/omen18/QuillAI/tree/main/docs/oss/get_started/installation)
 > before installing this package.
 
 Runnable demos:

@@ -13,7 +13,7 @@ shareAI Kode coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent kode
+npx skills add omen18/QuillAI --agent kode
 ```
 
 ## Run onboarding

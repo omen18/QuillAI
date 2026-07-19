@@ -29,7 +29,7 @@ quill skills get genbi                   # build & deploy a shareable GenBI web 
 
 ## Reference docs
 
-Full reference docs live on the web: <https://github.com/omen18/Quill/tree/main/docs/core>
+Full reference docs live on the web: <https://github.com/omen18/QuillAI/tree/main/docs/core>
 
 ```bash
 quill docs connection-info <ds>          # required + optional connection fields for a data source

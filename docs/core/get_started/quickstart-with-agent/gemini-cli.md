@@ -14,7 +14,7 @@ Google's official Gemini CLI.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent gemini-cli
+npx skills add omen18/QuillAI --agent gemini-cli
 ```
 
 ## Run onboarding

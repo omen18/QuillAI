@@ -13,7 +13,7 @@ Codemaker AI coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent codemaker
+npx skills add omen18/QuillAI --agent codemaker
 ```
 
 ## Run onboarding

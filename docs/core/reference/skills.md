@@ -23,7 +23,7 @@ served on demand:
   printed to stdout by `quill skills get <name>`.
 - Prompt templates are served the same way: `quill ask "<q>" --guided|--direct`.
   Reference docs live on the web under
-  [`docs/core/`](https://github.com/omen18/Quill/tree/main/docs/core).
+  [`docs/core/`](https://github.com/omen18/QuillAI/tree/main/docs/core).
 
 Because the content travels with the wheel, the version the agent reads
 always matches the installed CLI.
@@ -45,7 +45,7 @@ List them with `quill skills list`.
 
 ```bash
 pip install quill                       # core CLI (DuckDB included)
-npx skills add omen18/Quill             # one-line discovery stub for your agent
+npx skills add omen18/QuillAI             # one-line discovery stub for your agent
 ```
 
 The installer auto-detects Claude Code, Cursor, Cline, Codex, and similar
@@ -71,7 +71,7 @@ quill ask "<question>" --direct            # for stronger LLMs
 ```
 
 Reference docs live on the web under
-[`docs/core/`](https://github.com/omen18/Quill/tree/main/docs/core).
+[`docs/core/`](https://github.com/omen18/QuillAI/tree/main/docs/core).
 
 A bundled CI guard (`tests/unit/test_served_content_guard.py`) scans every
 `quill <cmd>` invocation in served skill content, reference docs, and ask
@@ -141,9 +141,9 @@ The discovery stub routes the agent here on phrases like:
 
 ### Reference docs (the skill points to these, never duplicates)
 
-- [`docs/core/get_started/installation.md`](https://github.com/omen18/Quill/blob/main/docs/core/get_started/installation.md)
-- [`docs/core/guides/connect.md`](https://github.com/omen18/Quill/blob/main/docs/core/guides/connect.md)
-- [`docs/core/get_started/quickstart.md`](https://github.com/omen18/Quill/blob/main/docs/core/get_started/quickstart.md)
+- [`docs/core/get_started/installation.md`](https://github.com/omen18/QuillAI/blob/main/docs/core/get_started/installation.md)
+- [`docs/core/guides/connect.md`](https://github.com/omen18/QuillAI/blob/main/docs/core/guides/connect.md)
+- [`docs/core/get_started/quickstart.md`](https://github.com/omen18/QuillAI/blob/main/docs/core/get_started/quickstart.md)
 
 ---
 

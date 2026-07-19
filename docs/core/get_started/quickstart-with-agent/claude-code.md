@@ -13,7 +13,7 @@ Anthropic's official terminal coding assistant.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent claude-code
+npx skills add omen18/QuillAI --agent claude-code
 ```
 
 ## Run onboarding

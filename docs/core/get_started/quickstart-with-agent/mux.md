@@ -13,7 +13,7 @@ Mux coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent mux
+npx skills add omen18/QuillAI --agent mux
 ```
 
 ## Run onboarding

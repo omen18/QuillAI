@@ -2,7 +2,7 @@
   "name": "quill",
   "description": "Discovery stub for the Quill agent skill bundle. The actual workflow guides and prompt helpers live inside the quill CLI (`pip install quill`) and are served by `quill skills get` / `quill ask`.",
   "homepage": "https://quill.ai",
-  "repository": "https://github.com/omen18/Quill",
+  "repository": "https://github.com/omen18/QuillAI",
   "license": "Apache-2.0",
   "skills": [
     {
@@ -17,7 +17,7 @@
         "semantic-layer",
         "genbi"
       ],
-      "repository": "https://github.com/omen18/Quill/tree/main/skills/quill"
+      "repository": "https://github.com/omen18/QuillAI/tree/main/skills/quill"
     }
   ]
 }

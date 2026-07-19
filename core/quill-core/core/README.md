@@ -1,6 +1,6 @@
 # quill-semantic-core
 
-The Rust semantic engine at the heart of [Quill](https://github.com/omen18/Quill) — an open-source
+The Rust semantic engine at the heart of [Quill](https://github.com/omen18/QuillAI) — an open-source
 semantic layer for MCP clients and AI agents.
 
 `quill-semantic-core` takes a **MDL (Modeling Definition Language)** manifest plus a SQL query
@@ -38,9 +38,9 @@ Full API documentation is published on [docs.rs](https://docs.rs/quill-semantic-
 
 ## Learn more
 
-- Quill documentation: <https://github.com/omen18/Quill/tree/main/docs>
-- Project home: <https://github.com/omen18/Quill>
-- Source: <https://github.com/omen18/Quill>
+- Quill documentation: <https://github.com/omen18/QuillAI/tree/main/docs>
+- Project home: <https://github.com/omen18/QuillAI>
+- Source: <https://github.com/omen18/QuillAI>
 
 ## License
 

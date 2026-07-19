@@ -14,7 +14,7 @@ Atlassian Rovo Dev.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent rovodev
+npx skills add omen18/QuillAI --agent rovodev
 ```
 
 ## Run onboarding

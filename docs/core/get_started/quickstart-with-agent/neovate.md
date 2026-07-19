@@ -13,7 +13,7 @@ Neovate coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent neovate
+npx skills add omen18/QuillAI --agent neovate
 ```
 
 ## Run onboarding

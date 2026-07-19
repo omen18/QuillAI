@@ -1,6 +1,6 @@
 # Quill Core Documentation
 
-This directory is the **single source of truth** for Quill Core docs published at [github.com/omen18/Quill/tree/main/docs](https://github.com/omen18/Quill/tree/main/docs/oss/introduction).
+This directory is the **single source of truth** for Quill Core docs published at [github.com/omen18/QuillAI/tree/main/docs](https://github.com/omen18/QuillAI/tree/main/docs/oss/introduction).
 
 Changes merged to `main` are automatically synced to the doc website via GitHub Actions (`.github/workflows/sync-docs.yml`). The sync is **additive overlay** — files are copied and overwritten, but nothing is deleted automatically; stale files left behind by source-side renames or deletions must be cleaned up manually in the docs site repo.
 

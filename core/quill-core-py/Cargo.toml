@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2021"
 description = "Python bindings for Quill Engine semantic layer (quill-core)"
 license = "Apache-2.0"
-repository = "https://github.com/omen18/Quill"
+repository = "https://github.com/omen18/QuillAI"
 include = ["/src", "pyproject.toml", "Cargo.toml", "Cargo.lock"]
 
 [lib]

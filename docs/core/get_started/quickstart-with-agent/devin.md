@@ -14,7 +14,7 @@ Cognition Devin CLI.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent devin
+npx skills add omen18/QuillAI --agent devin
 ```
 
 ## Run onboarding

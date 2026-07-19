@@ -24,13 +24,13 @@ quill ask "<question>" --direct          # wrap a question for a stronger LLM
 
 ```bash
 pip install quill                 # the CLI (everything is here)
-npx skills add omen18/Quill            # install the discovery stub for AI clients
+npx skills add omen18/QuillAI            # install the discovery stub for AI clients
 ```
 
 Or via Claude Code's plugin marketplace:
 
 ```text
-/plugin marketplace add omen18/Quill --path skills
+/plugin marketplace add omen18/QuillAI --path skills
 /plugin install quill@quill
 ```
 

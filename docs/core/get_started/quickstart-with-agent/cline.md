@@ -13,7 +13,7 @@ Open-source autonomous coding agent for VS Code.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent cline
+npx skills add omen18/QuillAI --agent cline
 ```
 
 ## Run onboarding

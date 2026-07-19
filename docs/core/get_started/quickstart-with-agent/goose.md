@@ -13,7 +13,7 @@ Block's open-source coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent goose
+npx skills add omen18/QuillAI --agent goose
 ```
 
 ## Run onboarding

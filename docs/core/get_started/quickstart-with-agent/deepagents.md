@@ -14,7 +14,7 @@ LangChain Deep Agents framework.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent deepagents
+npx skills add omen18/QuillAI --agent deepagents
 ```
 
 ## Run onboarding

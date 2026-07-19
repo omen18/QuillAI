@@ -1,5 +1,5 @@
 <div align="center" id="top">
-<a href="https://github.com/omen18/Quill">
+<a href="https://github.com/omen18/QuillAI">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="./misc/quill_logo_white.png">
     <img src="./misc/quill_logo.png" width="300px" alt="Quill">
@@ -10,19 +10,19 @@
 
 *Your agents generate, deploy, and govern dashboards from any database, grounded in a context layer they can actually trust.*
 
-[Docs](https://github.com/omen18/Quill/tree/main/docs) · [Discord](https://discord.gg/5DvshJqG8Z) · [Vision](https://github.com/omen18/Quill) · [Blog](https://github.com/omen18/Quill)
+[Docs](https://github.com/omen18/QuillAI/tree/main/docs) · [Discord](https://discord.gg/5DvshJqG8Z) · [Vision](https://github.com/omen18/QuillAI) · [Blog](https://github.com/omen18/QuillAI)
 
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](LICENSE)
-[![GitHub Release](https://img.shields.io/github/v/release/omen18/Quill?logo=github&label=release)](https://github.com/omen18/Quill/releases)
-[![Last commit](https://img.shields.io/github/last-commit/omen18/Quill)](https://github.com/omen18/Quill/commits/main)
+[![GitHub Release](https://img.shields.io/github/v/release/omen18/QuillAI?logo=github&label=release)](https://github.com/omen18/QuillAI/releases)
+[![Last commit](https://img.shields.io/github/last-commit/omen18/QuillAI)](https://github.com/omen18/QuillAI/commits/main)
 [![Made by Yash Raj Sharan](https://img.shields.io/badge/made_by-Yash_Raj_Sharan-blue)](https://github.com/omen18)
-![Stars](https://img.shields.io/github/stars/omen18/Quill?style=social)
+![Stars](https://img.shields.io/github/stars/omen18/QuillAI?style=social)
 
 
 
 </div>
 
-> 📣 **2026-05-07**: Quill Engine has merged into this repo under [`core/`](./core). The previous `omen18/quill-engine` repo is archived. The previous Quill GenBI app (the Docker-based chat-first BI product) is preserved on the [`legacy/v1`](https://github.com/omen18/Quill/tree/legacy/v1) branch (tag `v1-final`) and is now **Quill GenBI Classic**; see [A note on the "GenBI" name](#a-note-on-the-genbi-name) below. [Read the announcement →](https://github.com/omen18/Quill/discussions)
+> 📣 **2026-05-07**: Quill Engine has merged into this repo under [`core/`](./core). The previous `omen18/quillai-engine` repo is archived. The previous Quill GenBI app (the Docker-based chat-first BI product) is preserved on the [`legacy/v1`](https://github.com/omen18/QuillAI/tree/legacy/v1) branch (tag `v1-final`) and is now **Quill GenBI Classic**; see [A note on the "GenBI" name](#a-note-on-the-genbi-name) below. [Read the announcement →](https://github.com/omen18/QuillAI/discussions)
 
 <!--
   📺 HERO DEMO (place here)
@@ -50,7 +50,7 @@ What makes the output trustworthy is the layer underneath: an open **context lay
 ## GenBI in three beats: Generate · Deploy · Know
 
 - **Generate.** Your agent turns a business question into *governed* SQL and charts. Schema-aware retrieval, MDL planning, dry-plan validation, and structured errors keep it correct instead of confidently wrong.
-- **Deploy.** Turn any answer into a shareable, browser-side dashboard powered by [`quill-core-wasm`](https://github.com/omen18/Quill/tree/main/core/quill-core-wasm) and ship it to your own Vercel or Cloudflare Pages account with one command.
+- **Deploy.** Turn any answer into a shareable, browser-side dashboard powered by [`quill-core-wasm`](https://github.com/omen18/QuillAI/tree/main/core/quill-core-wasm) and ship it to your own Vercel or Cloudflare Pages account with one command.
 - **Know.** The knowledge that makes all of this correct lives in versionable, evidence-linked files: semantic models (MDL), company definitions (`instructions.md`), and a memory of what worked. Reviewable. Git-friendly. Never locked inside someone else's UI.
 
 ## Why agent builders pick Quill
@@ -103,7 +103,7 @@ pip install "quill[postgres,memory]"   # add per-datasource and memory extras as
 ### 2. Install the discovery stub for your AI client
 
 ```bash
-npx skills add omen18/Quill            # auto-detects Claude Code, Cursor, Cline, Codex, …
+npx skills add omen18/QuillAI            # auto-detects Claude Code, Cursor, Cline, Codex, …
 ```
 
 The stub is ~50 lines. It teaches your agent to fetch workflow guides via
@@ -145,7 +145,7 @@ governed SQL, and executes via `quill query`.
 The agent runs `quill skills get genbi`, builds a browser-side GenBI app from
 your project's context, previews it locally, and ships it to your own Vercel
 or Cloudflare Pages account, returning a live, shareable URL. See the
-[Build & deploy a GenBI app guide](https://github.com/omen18/Quill/tree/main/docs).
+[Build & deploy a GenBI app guide](https://github.com/omen18/QuillAI/tree/main/docs).
 
 **Want to try it without your own database?** Ask your agent to use the
 bundled `jaffle_shop` sample dataset. Same flow, querying a real warehouse
@@ -171,7 +171,7 @@ Fast at first. Deep when you need it. Always reviewable and Git-friendly.
 
 - **Modeling Definition Language (MDL)**: models, columns, relationships, views, cubes, metrics, row-level / column-level access control (RLAC / CLAC)
 - **Engine**: Apache DataFusion based, 22+ data sources
-- **GenBI dashboards**: agent-built, browser-side apps powered by [`quill-core-wasm`](https://github.com/omen18/Quill/tree/main/core/quill-core-wasm), deployable to Vercel / Cloudflare Pages
+- **GenBI dashboards**: agent-built, browser-side apps powered by [`quill-core-wasm`](https://github.com/omen18/QuillAI/tree/main/core/quill-core-wasm), deployable to Vercel / Cloudflare Pages
 - **Knowledge & memory**: business meaning in version-controlled `instructions.md` and `queries.yml`, plus a local LanceDB memory index (hybrid retrieval) for recall
 - **Agent SDK**: `quill-langchain` (LangChain / LangGraph), `quill-pydantic`; reference Python integration for other stacks
 - **Governed execution primitives**: functions, dry-plan, row limits, access control
@@ -179,10 +179,10 @@ Fast at first. Deep when you need it. Always reviewable and Git-friendly.
 ## What's next
 
 - **End-to-end correctness primitives**: value profiling, rich retrieval, structured errors, golden eval runner
-- **Agent-native distribution**: first-class SDKs across major agent frameworks; see [GitHub Discussions](https://github.com/omen18/Quill/discussions) for what's prioritized next
+- **Agent-native distribution**: first-class SDKs across major agent frameworks; see [GitHub Discussions](https://github.com/omen18/QuillAI/discussions) for what's prioritized next
 - **Full governed execution**: audit logs, rate limits, approval workflow, data-flow inspector
 
-Full roadmap and design notes: see the [introduction](https://github.com/omen18/Quill/tree/main/docs).
+Full roadmap and design notes: see the [introduction](https://github.com/omen18/QuillAI/tree/main/docs).
 
 ## A note on the "GenBI" name
 
@@ -190,24 +190,24 @@ Full roadmap and design notes: see the [introduction](https://github.com/omen18/
 **generate** governed answers and **deploy** dashboards on top of Quill's context
 layer. The earlier **Quill GenBI** app, the Docker-based chat-first BI
 product, is now **Quill GenBI Classic**, preserved on the
-[`legacy/v1`](https://github.com/omen18/Quill/tree/legacy/v1) branch (no new
+[`legacy/v1`](https://github.com/omen18/QuillAI/tree/legacy/v1) branch (no new
 features or security fixes). For a maintained, hosted version of that classic
-experience, see [Quill Commercial](https://github.com/omen18/Quill).
+experience, see [Quill Commercial](https://github.com/omen18/QuillAI).
 
 ## Documentation
 
-- [Quickstart](https://github.com/omen18/Quill/tree/main/docs): from skill install to first answer
-- [Build & deploy a GenBI app](https://github.com/omen18/Quill/tree/main/docs): generate a dashboard and ship it
-- [Concepts](https://github.com/omen18/Quill/tree/main/docs): what context is, what MDL is, how memory works
-- [Connect a database](https://github.com/omen18/Quill/tree/main/docs): Postgres, BigQuery, Snowflake, DuckDB, and more
-- [Agent SDKs](https://github.com/omen18/Quill/tree/main/docs): what's shipping today, what's next
+- [Quickstart](https://github.com/omen18/QuillAI/tree/main/docs): from skill install to first answer
+- [Build & deploy a GenBI app](https://github.com/omen18/QuillAI/tree/main/docs): generate a dashboard and ship it
+- [Concepts](https://github.com/omen18/QuillAI/tree/main/docs): what context is, what MDL is, how memory works
+- [Connect a database](https://github.com/omen18/QuillAI/tree/main/docs): Postgres, BigQuery, Snowflake, DuckDB, and more
+- [Agent SDKs](https://github.com/omen18/QuillAI/tree/main/docs): what's shipping today, what's next
 
 ## Community
 
 - 💬 [Discord](https://discord.gg/5DvshJqG8Z): chat with the team and other builders
-- 🐙 [GitHub Discussions](https://github.com/omen18/Quill/discussions): design conversations, RFCs, longer threads
-- 🐦 [Twitter / X](https://github.com/omen18/Quill): release notes and short updates
-- 🗞 [Blog](https://github.com/omen18/Quill): vision, post-mortems, deep dives
+- 🐙 [GitHub Discussions](https://github.com/omen18/QuillAI/discussions): design conversations, RFCs, longer threads
+- 🐦 [Twitter / X](https://github.com/omen18/QuillAI): release notes and short updates
+- 🗞 [Blog](https://github.com/omen18/QuillAI): vision, post-mortems, deep dives
 
 ## Contributing
 
@@ -216,7 +216,7 @@ We build in the open. Issues, PRs, connector contributions, SDK integrations, do
 - [Contributor guide](./CONTRIBUTING.md)
 - [Connector ecosystem program](./docs/contributing-a-connector.md): three-tier ownership (official, community-blessed, community-owned)
 - [Architecture map](./docs/architecture.md): find the right place to land your change
-- Looking for somewhere to start? Try the [`good first issue`](https://github.com/omen18/Quill/labels/good%20first%20issue) label.
+- Looking for somewhere to start? Try the [`good first issue`](https://github.com/omen18/QuillAI/labels/good%20first%20issue) label.
 
 <details>
 <summary><strong>Project structure</strong> (click to expand)</summary>
@@ -240,8 +240,8 @@ examples/            Example projects
 
 ## Contributors
 
-<a href="https://github.com/omen18/Quill/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=omen18/Quill" alt="Quill contributors" />
+<a href="https://github.com/omen18/QuillAI/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=omen18/QuillAI" alt="Quill contributors" />
 </a>
 
 ## License

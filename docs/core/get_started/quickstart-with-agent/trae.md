@@ -13,7 +13,7 @@ ByteDance Trae IDE.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent trae
+npx skills add omen18/QuillAI --agent trae
 ```
 
 ## Run onboarding

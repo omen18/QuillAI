@@ -14,7 +14,7 @@ Tabnine CLI coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent tabnine-cli
+npx skills add omen18/QuillAI --agent tabnine-cli
 ```
 
 ## Run onboarding

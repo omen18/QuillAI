@@ -13,7 +13,7 @@ OPPO/Heytap coding IDE.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent codestudio
+npx skills add omen18/QuillAI --agent codestudio
 ```
 
 ## Run onboarding

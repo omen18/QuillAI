@@ -1,6 +1,6 @@
 # Quill Core Python Binding
 
-Python bindings for [quill-core](../quill-core), the Rust semantic engine behind [Quill Engine](https://github.com/omen18/Quill). Built with [PyO3](https://github.com/PyO3/pyo3) and [Maturin](https://github.com/PyO3/maturin).
+Python bindings for [quill-core](../quill-core), the Rust semantic engine behind [Quill Engine](https://github.com/omen18/QuillAI). Built with [PyO3](https://github.com/PyO3/pyo3) and [Maturin](https://github.com/PyO3/maturin).
 
 Quill Engine translates SQL queries through a semantic layer (MDL - Modeling Definition Language) and executes them against 22+ data sources (PostgreSQL, BigQuery, Snowflake, etc.).
 

@@ -13,7 +13,7 @@ VS Code coding agent (fork of Roo Code).
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent kilo
+npx skills add omen18/QuillAI --agent kilo
 ```
 
 ## Run onboarding

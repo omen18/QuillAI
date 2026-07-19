@@ -13,7 +13,7 @@ Sourcegraph's coding agent. Uses the shared `.agents/skills/` directory.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent amp
+npx skills add omen18/QuillAI --agent amp
 ```
 
 ## Run onboarding

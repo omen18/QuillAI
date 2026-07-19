@@ -2,11 +2,11 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/quill.svg)](https://pypi.org/project/quill/)
 [![Python](https://img.shields.io/pypi/pyversions/quill.svg)](https://pypi.org/project/quill/)
-[![License](https://img.shields.io/pypi/l/quill.svg)](https://github.com/omen18/Quill/blob/main/LICENSE)
+[![License](https://img.shields.io/pypi/l/quill.svg)](https://github.com/omen18/QuillAI/blob/main/LICENSE)
 
 Quill CLI and Python SDK — semantic SQL layer for 20+ data sources.
 
-Translate natural SQL queries through an [MDL (Modeling Definition Language)](https://github.com/omen18/Quill/tree/main/docs/) semantic layer and execute them against your database. Powered by [Apache DataFusion](https://datafusion.apache.org/).
+Translate natural SQL queries through an [MDL (Modeling Definition Language)](https://github.com/omen18/QuillAI/tree/main/docs/) semantic layer and execute them against your database. Powered by [Apache DataFusion](https://datafusion.apache.org/).
 
 ## Installation
 

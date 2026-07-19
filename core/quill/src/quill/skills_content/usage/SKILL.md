@@ -74,7 +74,7 @@ The CLI reads the active profile for connection info and datasource. Use `quill 
 
 For memory-specific decisions, see the `memory` reference (run `quill skills get usage --full`).
 For SQL syntax, CTE-based modeling, and error diagnosis, see the `quill-sql` reference (run `quill skills get usage --full`).
-For project structure, MDL field definitions, and CLI workflow details, see the [documentation](https://github.com/omen18/Quill/tree/main/docs/core).
+For project structure, MDL field definitions, and CLI workflow details, see the [documentation](https://github.com/omen18/QuillAI/tree/main/docs/core).
 
 ---
 

@@ -14,7 +14,7 @@ Snowflake Cortex coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent cortex
+npx skills add omen18/QuillAI --agent cortex
 ```
 
 ## Run onboarding

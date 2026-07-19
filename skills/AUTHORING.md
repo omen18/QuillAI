@@ -88,7 +88,7 @@ For day-to-day querying after setup, run `quill skills get usage`.
 
 Cross-link to a general doc:
 ```markdown
-For troubleshooting, see [`connect.md`](https://github.com/omen18/Quill/blob/main/docs/core/guides/connect.md).
+For troubleshooting, see [`connect.md`](https://github.com/omen18/QuillAI/blob/main/docs/core/guides/connect.md).
 ```
 
 ---

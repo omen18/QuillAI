@@ -21,14 +21,14 @@ pip install quill
 #### Option 1 — Claude Code plugin
 
 ```text
-/plugin marketplace add omen18/Quill --path skills
+/plugin marketplace add omen18/QuillAI --path skills
 /plugin install quill@quill
 ```
 
 #### Option 2 — `npx skills`
 
 ```bash
-npx skills add omen18/Quill
+npx skills add omen18/QuillAI
 ```
 
 The installer auto-detects your AI client. To target a specific one, add

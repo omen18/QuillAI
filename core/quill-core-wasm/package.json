@@ -35,12 +35,12 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/omen18/Quill.git",
+    "url": "git+https://github.com/omen18/QuillAI.git",
     "directory": "core/quill-core-wasm"
   },
-  "homepage": "https://github.com/omen18/Quill/tree/main/core/quill-core-wasm#readme",
+  "homepage": "https://github.com/omen18/QuillAI/tree/main/core/quill-core-wasm#readme",
   "bugs": {
-    "url": "https://github.com/omen18/Quill/issues"
+    "url": "https://github.com/omen18/QuillAI/issues"
   },
   "publishConfig": {
     "access": "public"

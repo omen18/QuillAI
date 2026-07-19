@@ -191,7 +191,7 @@ def test_clickhouse_arrow_table_preserves_duplicate_column_names() -> None:
 # ---------------------------------------------------------------------------
 # 4. Nullable(...) and LowCardinality(...) type parsing
 #
-# Regression for omen18/Quill#2184: Nullable(T) columns were mapped to
+# Regression for omen18/QuillAI#2184: Nullable(T) columns were mapped to
 # UNKNOWN in older ibis-server; the current SDK uses sqlglot which strips
 # the Nullable wrapper automatically. These tests prevent silent regressions.
 # ---------------------------------------------------------------------------
@@ -262,7 +262,7 @@ def test_clickhouse_arrow_table_nullable_columns_preserve_none_values() -> None:
 # ---------------------------------------------------------------------------
 # 5. Default port tracks the effective ``secure`` value (connection_url branch)
 #
-# Regression for omen18/Quill#2412 / #2416: the port-less default must follow
+# Regression for omen18/QuillAI#2412 / #2416: the port-less default must follow
 # the *effective* TLS setting (kwargs > query param > scheme), not the scheme
 # alone, and string overrides like ``?secure=false`` must not be truthy.
 # ---------------------------------------------------------------------------

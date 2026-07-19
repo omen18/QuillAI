@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://raw.githubusercontent.com/omen18/Quill/main/quill-mdl/mdl.schema.json",
+  "$id": "https://raw.githubusercontent.com/omen18/QuillAI/main/quill-mdl/mdl.schema.json",
   "title": "QuillMDL Manifest Schema",
   "description": "A schema for QuillMDL manifest file",
   "$defs": {
@@ -229,7 +229,7 @@
     "$schema": {
       "description": "the schema of QuillMDL",
       "type": "string",
-      "const": "https://raw.githubusercontent.com/omen18/Quill/main/quill-mdl/mdl.schema.json"
+      "const": "https://raw.githubusercontent.com/omen18/QuillAI/main/quill-mdl/mdl.schema.json"
     },
     "layoutVersion": {
       "description": "the MDL wire-format layout version (default 1)",

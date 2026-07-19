@@ -14,7 +14,7 @@ iFlow CLI agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent iflow-cli
+npx skills add omen18/QuillAI --agent iflow-cli
 ```
 
 ## Run onboarding

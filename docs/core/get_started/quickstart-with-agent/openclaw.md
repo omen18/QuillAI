@@ -14,7 +14,7 @@ OpenClaw coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent openclaw
+npx skills add omen18/QuillAI --agent openclaw
 ```
 
 ## Run onboarding

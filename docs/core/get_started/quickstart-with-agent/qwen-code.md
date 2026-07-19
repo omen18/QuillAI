@@ -14,7 +14,7 @@ Alibaba Qwen Code CLI.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent qwen-code
+npx skills add omen18/QuillAI --agent qwen-code
 ```
 
 ## Run onboarding

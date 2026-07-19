@@ -13,7 +13,7 @@ Open-source VS Code coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent roo
+npx skills add omen18/QuillAI --agent roo
 ```
 
 ## Run onboarding

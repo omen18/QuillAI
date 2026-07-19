@@ -14,7 +14,7 @@ Moonshot Kimi CLI. Uses the shared `.agents/skills/` directory.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent kimi-cli
+npx skills add omen18/QuillAI --agent kimi-cli
 ```
 
 ## Run onboarding

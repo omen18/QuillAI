@@ -13,7 +13,7 @@ Dexto coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent dexto
+npx skills add omen18/QuillAI --agent dexto
 ```
 
 ## Run onboarding

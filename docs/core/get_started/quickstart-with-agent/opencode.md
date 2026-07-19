@@ -13,7 +13,7 @@ SST's open-source coding agent.
 ## Install Quill skills
 
 ```bash
-npx skills add omen18/Quill --agent opencode
+npx skills add omen18/QuillAI --agent opencode
 ```
 
 ## Run onboarding

@@ -167,7 +167,7 @@ project/
 > "revenue by month" or "top customers", define cubes alongside models —
 > they give agents a structured query API instead of forcing them to
 > hand-write `GROUP BY` / `DATE_TRUNC` SQL. See the
-> [Cube guide](https://github.com/omen18/Quill/blob/main/docs/core/guides/cubes.md).
+> [Cube guide](https://github.com/omen18/QuillAI/blob/main/docs/core/guides/cubes.md).
 
 > **IMPORTANT: `catalog` and `schema` in `quill_project.yml`**
 >

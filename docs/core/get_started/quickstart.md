@@ -101,9 +101,9 @@ quill version
 Skills are workflow guides that tell your AI coding agent how to use the Quill CLI effectively. Install the discovery stub. It fetches the guides from the CLI on demand:
 
 ```bash
-npx skills add omen18/Quill
+npx skills add omen18/QuillAI
 # or:
-curl -fsSL https://raw.githubusercontent.com/omen18/Quill/main/skills/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/omen18/QuillAI/main/skills/install.sh | bash
 ```
 
 The CLI auto-detects your installed agent. To target a specific one, add `--agent <name>` (e.g., `claude-code`, `cursor`, `windsurf`, `cline`). Only one skill (`quill`) is installed; the workflow guides below are served on demand with `quill skills get <name>`.

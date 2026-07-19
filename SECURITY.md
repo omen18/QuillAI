@@ -24,4 +24,4 @@ This information will help us triage your report more quickly.
 
 Security fixes are issued only for the most recent minor release of each published package (`quill`, `quill-core`, `quill-core-wasm`). Older releases may be patched on a best-effort basis.
 
-The historical Quill GenBI app (preserved on `legacy/v1`, tag `v1-final`) is **not** receiving security updates beyond the freeze. Use the maintained [`main`](https://github.com/omen18/Quill/tree/main) branch for new deployments.
+The historical Quill GenBI app (preserved on `legacy/v1`, tag `v1-final`) is **not** receiving security updates beyond the freeze. Use the maintained [`main`](https://github.com/omen18/QuillAI/tree/main) branch for new deployments.
