@@ -35,7 +35,7 @@ jobs:
       quill-semantic-core--tag_name: ${{ steps.release.outputs['core/quill-core--tag_name'] }}
       quill-semantic-core--version: ${{ steps.release.outputs['core/quill-core--version'] }}
     steps:
-      - uses: googleapis/release-please-action@v4
+      - uses: googleapis/release-please-action@v5
         id: release
         with:
           config-file: release-please-config.json
