@@ -1,0 +1,128 @@
+name: Release Please
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  release-please:
+    if: ${{ github.repository == 'omen18/Quill' }}
+    runs-on: ubuntu-latest
+    outputs:
+      quill-core-py--release_created: ${{ steps.release.outputs['core/quill-core-py--release_created'] }}
+      quill-core-py--tag_name: ${{ steps.release.outputs['core/quill-core-py--tag_name'] }}
+      quill-core-py--version: ${{ steps.release.outputs['core/quill-core-py--version'] }}
+      quill--release_created: ${{ steps.release.outputs['core/quill--release_created'] }}
+      quill--tag_name: ${{ steps.release.outputs['core/quill--tag_name'] }}
+      quill--version: ${{ steps.release.outputs['core/quill--version'] }}
+      quill-core-wasm--release_created: ${{ steps.release.outputs['core/quill-core-wasm--release_created'] }}
+      quill-core-wasm--tag_name: ${{ steps.release.outputs['core/quill-core-wasm--tag_name'] }}
+      quill-core-wasm--version: ${{ steps.release.outputs['core/quill-core-wasm--version'] }}
+      quill-langchain--release_created: ${{ steps.release.outputs['sdk/quill-langchain--release_created'] }}
+      quill-langchain--tag_name: ${{ steps.release.outputs['sdk/quill-langchain--tag_name'] }}
+      quill-langchain--version: ${{ steps.release.outputs['sdk/quill-langchain--version'] }}
+      quill-pydantic--release_created: ${{ steps.release.outputs['sdk/quill-pydantic--release_created'] }}
+      quill-pydantic--tag_name: ${{ steps.release.outputs['sdk/quill-pydantic--tag_name'] }}
+      quill-pydantic--version: ${{ steps.release.outputs['sdk/quill-pydantic--version'] }}
+      # The three Rust core crates share one version via the linked-versions
+      # plugin and release together, so gating on quill-semantic-core covers all.
+      quill-semantic-core--release_created: ${{ steps.release.outputs['core/quill-core--release_created'] }}
+      quill-semantic-core--tag_name: ${{ steps.release.outputs['core/quill-core--tag_name'] }}
+      quill-semantic-core--version: ${{ steps.release.outputs['core/quill-core--version'] }}
+    steps:
+      - uses: googleapis/release-please-action@v4
+        id: release
+        with:
+          config-file: release-please-config.json
+          manifest-file: .release-please-manifest.json
+
+  publish-quill-core-py:
+    needs: release-please
+    if: needs.release-please.outputs['quill-core-py--release_created'] == 'true'
+    uses: ./.github/workflows/publish-quill-core-py.yml
+    with:
+      version: ${{ needs.release-please.outputs['quill-core-py--version'] }}
+      tag_name: ${{ needs.release-please.outputs['quill-core-py--tag_name'] }}
+    permissions:
+      contents: read
+      id-token: write
+
+  # After quill-core-py is published, relock the downstream core/quill SDK against
+  # the new engine binding and open a PR. Runs only if publish-quill-core-py
+  # succeeded, so we never bump to a version that failed to publish.
+  sync-quill-core-py-lock:
+    needs: [release-please, publish-quill-core-py]
+    if: needs.release-please.outputs['quill-core-py--release_created'] == 'true'
+    uses: ./.github/workflows/sync-quill-core-py-lock.yml
+    with:
+      version: ${{ needs.release-please.outputs['quill-core-py--version'] }}
+    permissions:
+      contents: write
+      pull-requests: write
+
+  publish-quill:
+    needs: release-please
+    if: needs.release-please.outputs['quill--release_created'] == 'true'
+    uses: ./.github/workflows/publish-quill.yml
+    with:
+      version: ${{ needs.release-please.outputs['quill--version'] }}
+      tag_name: ${{ needs.release-please.outputs['quill--tag_name'] }}
+    permissions:
+      contents: read
+      id-token: write
+
+  publish-quill-core-wasm:
+    needs: release-please
+    if: needs.release-please.outputs['quill-core-wasm--release_created'] == 'true'
+    uses: ./.github/workflows/publish-quill-core-wasm.yml
+    with:
+      version: ${{ needs.release-please.outputs['quill-core-wasm--version'] }}
+      tag_name: ${{ needs.release-please.outputs['quill-core-wasm--tag_name'] }}
+    permissions:
+      contents: read
+      id-token: write
+
+  # release-please outputs come from conventional-commit aggregation, not from
+  # untrusted issue/PR event payloads, so direct ${{ ... }} interpolation is
+  # safe here. Same pattern as the publish jobs above.
+  publish-quill-langchain:
+    needs: release-please
+    if: needs.release-please.outputs['quill-langchain--release_created'] == 'true'
+    uses: ./.github/workflows/publish-quill-langchain.yml
+    with:
+      version: ${{ needs.release-please.outputs['quill-langchain--version'] }}
+      tag_name: ${{ needs.release-please.outputs['quill-langchain--tag_name'] }}
+    permissions:
+      contents: read
+      id-token: write
+
+  publish-quill-pydantic:
+    needs: release-please
+    if: needs.release-please.outputs['quill-pydantic--release_created'] == 'true'
+    uses: ./.github/workflows/publish-quill-pydantic.yml
+    with:
+      version: ${{ needs.release-please.outputs['quill-pydantic--version'] }}
+      tag_name: ${{ needs.release-please.outputs['quill-pydantic--tag_name'] }}
+    permissions:
+      contents: read
+      id-token: write
+
+  # Publishes quill-manifest-macro, quill-core-base, and quill-semantic-core to
+  # crates.io bottom-up in one run. The three crates are linked to a single
+  # version, so a release always bumps all three together — gating on the
+  # quill-semantic-core output is sufficient.
+  publish-quill-crates:
+    needs: release-please
+    if: needs.release-please.outputs['quill-semantic-core--release_created'] == 'true'
+    uses: ./.github/workflows/publish-quill-crates.yml
+    with:
+      version: ${{ needs.release-please.outputs['quill-semantic-core--version'] }}
+      tag_name: ${{ needs.release-please.outputs['quill-semantic-core--tag_name'] }}
+    permissions:
+      contents: read
+      id-token: write

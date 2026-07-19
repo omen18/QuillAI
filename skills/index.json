@@ -1,0 +1,23 @@
+{
+  "name": "quill",
+  "description": "Discovery stub for the Quill agent skill bundle. The actual workflow guides and prompt helpers live inside the quill CLI (`pip install quill`) and are served by `quill skills get` / `quill ask`.",
+  "homepage": "https://quill.ai",
+  "repository": "https://github.com/omen18/Quill",
+  "license": "Apache-2.0",
+  "skills": [
+    {
+      "name": "quill",
+      "description": "Quill CLI discovery stub. The actual workflow guides live inside the quill CLI; this stub teaches an AI agent to call `quill skills list`, `quill skills get <name>`, and `quill ask <prompt> --guided|--direct`. Use whenever the user asks a data question, wants to install / set up Quill Engine, connect a new database, load SaaS data via dlt, generate or regenerate an MDL project, enrich a project with business context, or build & deploy a shareable GenBI web app / dashboard from a project's semantic layer (Vercel / Cloudflare).",
+      "tags": [
+        "quill",
+        "discovery-stub",
+        "cli",
+        "sql",
+        "mdl",
+        "semantic-layer",
+        "genbi"
+      ],
+      "repository": "https://github.com/omen18/Quill/tree/main/skills/quill"
+    }
+  ]
+}

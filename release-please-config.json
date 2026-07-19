@@ -1,0 +1,134 @@
+{
+  "$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+  "separate-pull-requests": true,
+  "include-component-in-tag": true,
+  "group-pull-request-title-pattern": "chore${scope}: release quill-rust-core libraries",
+  "packages": {
+    "core/quill-core-py": {
+      "component": "quill-core-py",
+      "release-type": "python",
+      "bump-minor-pre-major": true,
+      "extra-files": [
+        "Cargo.toml",
+        {
+          "path": "uv.lock",
+          "type": "toml",
+          "jsonpath": "$.package[?(@.name.value=='quill-core-py')].version"
+        }
+      ]
+    },
+    "core/quill": {
+      "component": "quill",
+      "release-type": "python",
+      "bump-minor-pre-major": true,
+      "extra-files": [
+        {
+          "path": "uv.lock",
+          "type": "toml",
+          "jsonpath": "$.package[?(@.name.value=='quill')].version"
+        }
+      ]
+    },
+    "core/quill-core-wasm": {
+      "component": "quill-core-wasm",
+      "release-type": "node",
+      "bump-minor-pre-major": true,
+      "extra-files": [
+        "Cargo.toml"
+      ]
+    },
+    "sdk/quill-langchain": {
+      "component": "quill-langchain",
+      "release-type": "python",
+      "bump-minor-pre-major": true,
+      "extra-files": [
+        "src/quill_langchain/__init__.py"
+      ]
+    },
+    "sdk/quill-pydantic": {
+      "component": "quill-pydantic",
+      "release-type": "python",
+      "bump-minor-pre-major": true,
+      "extra-files": [
+        "src/quill_pydantic/__init__.py"
+      ]
+    },
+    "core/quill-core-base/manifest-macro": {
+      "component": "quill-manifest-macro",
+      "release-type": "rust",
+      "bump-minor-pre-major": true,
+      "extra-files": [
+        {
+          "path": "/core/quill-core-py/Cargo.lock",
+          "type": "toml",
+          "jsonpath": "$.package[?(@.name.value=='quill-manifest-macro')].version"
+        },
+        {
+          "path": "/core/quill-core-wasm/Cargo.lock",
+          "type": "toml",
+          "jsonpath": "$.package[?(@.name.value=='quill-manifest-macro')].version"
+        }
+      ]
+    },
+    "core/quill-core-base": {
+      "component": "quill-core-base",
+      "release-type": "rust",
+      "bump-minor-pre-major": true,
+      "extra-files": [
+        {
+          "path": "Cargo.toml",
+          "type": "toml",
+          "jsonpath": "$.dependencies.quill-manifest-macro.version"
+        },
+        {
+          "path": "/core/quill-core-py/Cargo.lock",
+          "type": "toml",
+          "jsonpath": "$.package[?(@.name.value=='quill-core-base')].version"
+        },
+        {
+          "path": "/core/quill-core-wasm/Cargo.lock",
+          "type": "toml",
+          "jsonpath": "$.package[?(@.name.value=='quill-core-base')].version"
+        }
+      ]
+    },
+    "core/quill-core": {
+      "component": "quill-semantic-core",
+      "release-type": "simple",
+      "bump-minor-pre-major": true,
+      "extra-files": [
+        {
+          "path": "Cargo.toml",
+          "type": "toml",
+          "jsonpath": "$.workspace.package.version"
+        },
+        {
+          "path": "Cargo.toml",
+          "type": "toml",
+          "jsonpath": "$.workspace.dependencies.quill-core-base.version"
+        },
+        {
+          "path": "/core/quill-core-py/Cargo.lock",
+          "type": "toml",
+          "jsonpath": "$.package[?(@.name.value=='quill-semantic-core')].version"
+        },
+        {
+          "path": "/core/quill-core-wasm/Cargo.lock",
+          "type": "toml",
+          "jsonpath": "$.package[?(@.name.value=='quill-semantic-core')].version"
+        }
+      ]
+    }
+  },
+  "plugins": [
+    {
+      "type": "linked-versions",
+      "groupName": "quill-rust-core",
+      "components": [
+        "quill-manifest-macro",
+        "quill-core-base",
+        "quill-semantic-core"
+      ]
+    }
+  ]
+}

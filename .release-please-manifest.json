@@ -1,0 +1,10 @@
+{
+  "core/quill-core-py": "0.7.1",
+  "core/quill": "0.13.0",
+  "core/quill-core-wasm": "0.4.1",
+  "sdk/quill-langchain": "0.2.0",
+  "sdk/quill-pydantic": "0.2.0",
+  "core/quill-core-base/manifest-macro": "0.2.0",
+  "core/quill-core-base": "0.2.0",
+  "core/quill-core": "0.2.0"
+}

@@ -1,0 +1,11 @@
+schema_version: 5
+name: my_project
+version: "1.0"
+
+# Quill Engine namespace (NOT your database's catalog/schema).
+# These identify this MDL project within the engine.
+# Your database's actual catalog/schema goes in each model's table_reference.
+catalog: quill
+schema: public
+
+data_source: duckdb  # change to your datasource type

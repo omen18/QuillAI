@@ -1,0 +1,1099 @@
+{
+ "customers": [
+  {
+   "id": 1,
+   "name": "Michael P."
+  },
+  {
+   "id": 2,
+   "name": "Shawn M."
+  },
+  {
+   "id": 3,
+   "name": "Kathleen P."
+  },
+  {
+   "id": 4,
+   "name": "Jimmy C."
+  },
+  {
+   "id": 5,
+   "name": "Katherine R."
+  },
+  {
+   "id": 6,
+   "name": "Sarah R."
+  },
+  {
+   "id": 7,
+   "name": "Martin M."
+  },
+  {
+   "id": 8,
+   "name": "Frank R."
+  },
+  {
+   "id": 9,
+   "name": "Jennifer F."
+  },
+  {
+   "id": 10,
+   "name": "Henry W."
+  },
+  {
+   "id": 11,
+   "name": "Fred S."
+  },
+  {
+   "id": 12,
+   "name": "Amy D."
+  },
+  {
+   "id": 13,
+   "name": "Kathleen M."
+  },
+  {
+   "id": 14,
+   "name": "Steve F."
+  },
+  {
+   "id": 15,
+   "name": "Teresa H."
+  },
+  {
+   "id": 16,
+   "name": "Amanda H."
+  },
+  {
+   "id": 17,
+   "name": "Kimberly R."
+  },
+  {
+   "id": 18,
+   "name": "Johnny K."
+  },
+  {
+   "id": 19,
+   "name": "Virginia F."
+  },
+  {
+   "id": 20,
+   "name": "Anna A."
+  },
+  {
+   "id": 21,
+   "name": "Willie H."
+  },
+  {
+   "id": 22,
+   "name": "Sean H."
+  },
+  {
+   "id": 23,
+   "name": "Mildred A."
+  },
+  {
+   "id": 24,
+   "name": "David G."
+  },
+  {
+   "id": 25,
+   "name": "Victor H."
+  },
+  {
+   "id": 26,
+   "name": "Aaron R."
+  },
+  {
+   "id": 27,
+   "name": "Benjamin B."
+  },
+  {
+   "id": 28,
+   "name": "Lisa W."
+  },
+  {
+   "id": 29,
+   "name": "Benjamin K."
+  },
+  {
+   "id": 30,
+   "name": "Christina W."
+  },
+  {
+   "id": 31,
+   "name": "Jane G."
+  },
+  {
+   "id": 32,
+   "name": "Thomas O."
+  },
+  {
+   "id": 33,
+   "name": "Katherine M."
+  },
+  {
+   "id": 34,
+   "name": "Jennifer S."
+  },
+  {
+   "id": 35,
+   "name": "Sara T."
+  },
+  {
+   "id": 36,
+   "name": "Harold O."
+  },
+  {
+   "id": 37,
+   "name": "Shirley J."
+  },
+  {
+   "id": 38,
+   "name": "Dennis J."
+  },
+  {
+   "id": 39,
+   "name": "Louise W."
+  },
+  {
+   "id": 40,
+   "name": "Maria A."
+  },
+  {
+   "id": 41,
+   "name": "Gloria C."
+  },
+  {
+   "id": 42,
+   "name": "Diana S."
+  },
+  {
+   "id": 43,
+   "name": "Kelly N."
+  },
+  {
+   "id": 44,
+   "name": "Jane R."
+  },
+  {
+   "id": 45,
+   "name": "Scott B."
+  },
+  {
+   "id": 46,
+   "name": "Norma C."
+  },
+  {
+   "id": 47,
+   "name": "Marie P."
+  },
+  {
+   "id": 48,
+   "name": "Lillian C."
+  },
+  {
+   "id": 49,
+   "name": "Judy N."
+  },
+  {
+   "id": 50,
+   "name": "Billy L."
+  },
+  {
+   "id": 51,
+   "name": "Howard R."
+  },
+  {
+   "id": 52,
+   "name": "Laura F."
+  },
+  {
+   "id": 53,
+   "name": "Anne B."
+  },
+  {
+   "id": 54,
+   "name": "Rose M."
+  },
+  {
+   "id": 55,
+   "name": "Nicholas R."
+  },
+  {
+   "id": 56,
+   "name": "Joshua K."
+  },
+  {
+   "id": 57,
+   "name": "Paul W."
+  },
+  {
+   "id": 58,
+   "name": "Kathryn K."
+  },
+  {
+   "id": 59,
+   "name": "Adam A."
+  },
+  {
+   "id": 60,
+   "name": "Norma W."
+  },
+  {
+   "id": 61,
+   "name": "Timothy R."
+  },
+  {
+   "id": 62,
+   "name": "Elizabeth P."
+  },
+  {
+   "id": 63,
+   "name": "Edward G."
+  },
+  {
+   "id": 64,
+   "name": "David C."
+  },
+  {
+   "id": 65,
+   "name": "Brenda W."
+  },
+  {
+   "id": 66,
+   "name": "Adam W."
+  },
+  {
+   "id": 67,
+   "name": "Michael H."
+  },
+  {
+   "id": 68,
+   "name": "Jesse E."
+  },
+  {
+   "id": 69,
+   "name": "Janet P."
+  },
+  {
+   "id": 70,
+   "name": "Helen F."
+  },
+  {
+   "id": 71,
+   "name": "Gerald C."
+  },
+  {
+   "id": 72,
+   "name": "Kathryn O."
+  },
+  {
+   "id": 73,
+   "name": "Alan B."
+  },
+  {
+   "id": 74,
+   "name": "Harry A."
+  },
+  {
+   "id": 75,
+   "name": "Andrea H."
+  },
+  {
+   "id": 76,
+   "name": "Barbara W."
+  },
+  {
+   "id": 77,
+   "name": "Anne W."
+  },
+  {
+   "id": 78,
+   "name": "Harry H."
+  },
+  {
+   "id": 79,
+   "name": "Jack R."
+  },
+  {
+   "id": 80,
+   "name": "Phillip H."
+  },
+  {
+   "id": 81,
+   "name": "Shirley H."
+  },
+  {
+   "id": 82,
+   "name": "Arthur D."
+  },
+  {
+   "id": 83,
+   "name": "Virginia R."
+  },
+  {
+   "id": 84,
+   "name": "Christina R."
+  },
+  {
+   "id": 85,
+   "name": "Theresa M."
+  },
+  {
+   "id": 86,
+   "name": "Jason C."
+  },
+  {
+   "id": 87,
+   "name": "Phillip B."
+  },
+  {
+   "id": 88,
+   "name": "Adam T."
+  },
+  {
+   "id": 89,
+   "name": "Margaret J."
+  },
+  {
+   "id": 90,
+   "name": "Paul P."
+  },
+  {
+   "id": 91,
+   "name": "Todd W."
+  },
+  {
+   "id": 92,
+   "name": "Willie O."
+  },
+  {
+   "id": 93,
+   "name": "Frances R."
+  },
+  {
+   "id": 94,
+   "name": "Gregory H."
+  },
+  {
+   "id": 95,
+   "name": "Lisa P."
+  },
+  {
+   "id": 96,
+   "name": "Jacqueline A."
+  },
+  {
+   "id": 97,
+   "name": "Shirley D."
+  },
+  {
+   "id": 98,
+   "name": "Nicole M."
+  },
+  {
+   "id": 99,
+   "name": "Mary G."
+  },
+  {
+   "id": 100,
+   "name": "Jean M."
+  }
+ ],
+ "orders": [
+  {
+   "id": 1,
+   "customer_id": 1,
+   "amount": 10.0,
+   "ordered_at": "2018-01-01",
+   "status": "returned"
+  },
+  {
+   "id": 2,
+   "customer_id": 3,
+   "amount": 20.0,
+   "ordered_at": "2018-01-02",
+   "status": "completed"
+  },
+  {
+   "id": 3,
+   "customer_id": 94,
+   "amount": 1.0,
+   "ordered_at": "2018-01-04",
+   "status": "completed"
+  },
+  {
+   "id": 4,
+   "customer_id": 50,
+   "amount": 25.0,
+   "ordered_at": "2018-01-05",
+   "status": "completed"
+  },
+  {
+   "id": 5,
+   "customer_id": 64,
+   "amount": 17.0,
+   "ordered_at": "2018-01-05",
+   "status": "completed"
+  },
+  {
+   "id": 6,
+   "customer_id": 54,
+   "amount": 6.0,
+   "ordered_at": "2018-01-07",
+   "status": "completed"
+  },
+  {
+   "id": 7,
+   "customer_id": 88,
+   "amount": 16.0,
+   "ordered_at": "2018-01-09",
+   "status": "completed"
+  },
+  {
+   "id": 8,
+   "customer_id": 2,
+   "amount": 23.0,
+   "ordered_at": "2018-01-11",
+   "status": "returned"
+  },
+  {
+   "id": 9,
+   "customer_id": 53,
+   "amount": 23.0,
+   "ordered_at": "2018-01-12",
+   "status": "completed"
+  },
+  {
+   "id": 10,
+   "customer_id": 7,
+   "amount": 26.0,
+   "ordered_at": "2018-01-14",
+   "status": "completed"
+  },
+  {
+   "id": 11,
+   "customer_id": 99,
+   "amount": 27.0,
+   "ordered_at": "2018-01-14",
+   "status": "completed"
+  },
+  {
+   "id": 12,
+   "customer_id": 59,
+   "amount": 1.0,
+   "ordered_at": "2018-01-15",
+   "status": "completed"
+  },
+  {
+   "id": 13,
+   "customer_id": 84,
+   "amount": 19.0,
+   "ordered_at": "2018-01-17",
+   "status": "completed"
+  },
+  {
+   "id": 14,
+   "customer_id": 40,
+   "amount": 3.0,
+   "ordered_at": "2018-01-17",
+   "status": "returned"
+  },
+  {
+   "id": 15,
+   "customer_id": 25,
+   "amount": 22.0,
+   "ordered_at": "2018-01-17",
+   "status": "completed"
+  },
+  {
+   "id": 16,
+   "customer_id": 39,
+   "amount": 10.0,
+   "ordered_at": "2018-01-18",
+   "status": "completed"
+  },
+  {
+   "id": 17,
+   "customer_id": 71,
+   "amount": 2.0,
+   "ordered_at": "2018-01-18",
+   "status": "completed"
+  },
+  {
+   "id": 18,
+   "customer_id": 64,
+   "amount": 13.0,
+   "ordered_at": "2018-01-20",
+   "status": "returned"
+  },
+  {
+   "id": 19,
+   "customer_id": 54,
+   "amount": 6.0,
+   "ordered_at": "2018-01-22",
+   "status": "completed"
+  },
+  {
+   "id": 20,
+   "customer_id": 20,
+   "amount": 15.0,
+   "ordered_at": "2018-01-23",
+   "status": "completed"
+  },
+  {
+   "id": 21,
+   "customer_id": 71,
+   "amount": 12.0,
+   "ordered_at": "2018-01-23",
+   "status": "completed"
+  },
+  {
+   "id": 22,
+   "customer_id": 86,
+   "amount": 8.0,
+   "ordered_at": "2018-01-24",
+   "status": "completed"
+  },
+  {
+   "id": 23,
+   "customer_id": 22,
+   "amount": 23.0,
+   "ordered_at": "2018-01-26",
+   "status": "return_pending"
+  },
+  {
+   "id": 24,
+   "customer_id": 3,
+   "amount": 26.0,
+   "ordered_at": "2018-01-27",
+   "status": "completed"
+  },
+  {
+   "id": 25,
+   "customer_id": 51,
+   "amount": 58.0,
+   "ordered_at": "2018-01-28",
+   "status": "completed"
+  },
+  {
+   "id": 26,
+   "customer_id": 32,
+   "amount": 30.0,
+   "ordered_at": "2018-01-28",
+   "status": "completed"
+  },
+  {
+   "id": 27,
+   "customer_id": 94,
+   "amount": 23.0,
+   "ordered_at": "2018-01-29",
+   "status": "completed"
+  },
+  {
+   "id": 28,
+   "customer_id": 8,
+   "amount": 19.0,
+   "ordered_at": "2018-01-29",
+   "status": "completed"
+  },
+  {
+   "id": 29,
+   "customer_id": 57,
+   "amount": 12.0,
+   "ordered_at": "2018-01-31",
+   "status": "completed"
+  },
+  {
+   "id": 30,
+   "customer_id": 69,
+   "amount": 13.0,
+   "ordered_at": "2018-02-02",
+   "status": "completed"
+  },
+  {
+   "id": 31,
+   "customer_id": 16,
+   "amount": 12.0,
+   "ordered_at": "2018-02-02",
+   "status": "completed"
+  },
+  {
+   "id": 32,
+   "customer_id": 28,
+   "amount": 3.0,
+   "ordered_at": "2018-02-04",
+   "status": "completed"
+  },
+  {
+   "id": 33,
+   "customer_id": 42,
+   "amount": 22.0,
+   "ordered_at": "2018-02-04",
+   "status": "completed"
+  },
+  {
+   "id": 34,
+   "customer_id": 38,
+   "amount": 15.0,
+   "ordered_at": "2018-02-06",
+   "status": "completed"
+  },
+  {
+   "id": 35,
+   "customer_id": 80,
+   "amount": 29.0,
+   "ordered_at": "2018-02-08",
+   "status": "completed"
+  },
+  {
+   "id": 36,
+   "customer_id": 85,
+   "amount": 9.0,
+   "ordered_at": "2018-02-10",
+   "status": "completed"
+  },
+  {
+   "id": 37,
+   "customer_id": 1,
+   "amount": 23.0,
+   "ordered_at": "2018-02-10",
+   "status": "completed"
+  },
+  {
+   "id": 38,
+   "customer_id": 51,
+   "amount": 15.0,
+   "ordered_at": "2018-02-10",
+   "status": "completed"
+  },
+  {
+   "id": 39,
+   "customer_id": 26,
+   "amount": 8.0,
+   "ordered_at": "2018-02-11",
+   "status": "completed"
+  },
+  {
+   "id": 40,
+   "customer_id": 33,
+   "amount": 14.0,
+   "ordered_at": "2018-02-13",
+   "status": "completed"
+  },
+  {
+   "id": 41,
+   "customer_id": 99,
+   "amount": 17.0,
+   "ordered_at": "2018-02-14",
+   "status": "completed"
+  },
+  {
+   "id": 42,
+   "customer_id": 92,
+   "amount": 17.0,
+   "ordered_at": "2018-02-16",
+   "status": "completed"
+  },
+  {
+   "id": 43,
+   "customer_id": 31,
+   "amount": 18.0,
+   "ordered_at": "2018-02-17",
+   "status": "completed"
+  },
+  {
+   "id": 44,
+   "customer_id": 66,
+   "amount": 11.0,
+   "ordered_at": "2018-02-17",
+   "status": "completed"
+  },
+  {
+   "id": 45,
+   "customer_id": 22,
+   "amount": 5.0,
+   "ordered_at": "2018-02-17",
+   "status": "completed"
+  },
+  {
+   "id": 46,
+   "customer_id": 6,
+   "amount": 8.0,
+   "ordered_at": "2018-02-19",
+   "status": "completed"
+  },
+  {
+   "id": 47,
+   "customer_id": 50,
+   "amount": 22.0,
+   "ordered_at": "2018-02-20",
+   "status": "completed"
+  },
+  {
+   "id": 48,
+   "customer_id": 27,
+   "amount": 3.0,
+   "ordered_at": "2018-02-21",
+   "status": "completed"
+  },
+  {
+   "id": 49,
+   "customer_id": 35,
+   "amount": 15.0,
+   "ordered_at": "2018-02-21",
+   "status": "completed"
+  },
+  {
+   "id": 50,
+   "customer_id": 51,
+   "amount": 26.0,
+   "ordered_at": "2018-02-23",
+   "status": "completed"
+  },
+  {
+   "id": 51,
+   "customer_id": 71,
+   "amount": 30.0,
+   "ordered_at": "2018-02-24",
+   "status": "completed"
+  },
+  {
+   "id": 52,
+   "customer_id": 54,
+   "amount": 15.0,
+   "ordered_at": "2018-02-25",
+   "status": "return_pending"
+  },
+  {
+   "id": 53,
+   "customer_id": 34,
+   "amount": 3.0,
+   "ordered_at": "2018-02-26",
+   "status": "completed"
+  },
+  {
+   "id": 54,
+   "customer_id": 54,
+   "amount": 29.0,
+   "ordered_at": "2018-02-26",
+   "status": "completed"
+  },
+  {
+   "id": 55,
+   "customer_id": 18,
+   "amount": 29.0,
+   "ordered_at": "2018-02-27",
+   "status": "completed"
+  },
+  {
+   "id": 56,
+   "customer_id": 79,
+   "amount": 4.0,
+   "ordered_at": "2018-02-28",
+   "status": "completed"
+  },
+  {
+   "id": 57,
+   "customer_id": 93,
+   "amount": 2.0,
+   "ordered_at": "2018-03-01",
+   "status": "completed"
+  },
+  {
+   "id": 58,
+   "customer_id": 22,
+   "amount": 24.0,
+   "ordered_at": "2018-03-01",
+   "status": "completed"
+  },
+  {
+   "id": 59,
+   "customer_id": 30,
+   "amount": 28.0,
+   "ordered_at": "2018-03-02",
+   "status": "completed"
+  },
+  {
+   "id": 60,
+   "customer_id": 12,
+   "amount": 4.0,
+   "ordered_at": "2018-03-03",
+   "status": "completed"
+  },
+  {
+   "id": 61,
+   "customer_id": 63,
+   "amount": 16.0,
+   "ordered_at": "2018-03-03",
+   "status": "completed"
+  },
+  {
+   "id": 62,
+   "customer_id": 57,
+   "amount": 14.0,
+   "ordered_at": "2018-03-05",
+   "status": "completed"
+  },
+  {
+   "id": 63,
+   "customer_id": 70,
+   "amount": 29.0,
+   "ordered_at": "2018-03-06",
+   "status": "completed"
+  },
+  {
+   "id": 64,
+   "customer_id": 13,
+   "amount": 26.0,
+   "ordered_at": "2018-03-07",
+   "status": "completed"
+  },
+  {
+   "id": 65,
+   "customer_id": 26,
+   "amount": 0.0,
+   "ordered_at": "2018-03-08",
+   "status": "completed"
+  },
+  {
+   "id": 66,
+   "customer_id": 36,
+   "amount": 28.0,
+   "ordered_at": "2018-03-10",
+   "status": "completed"
+  },
+  {
+   "id": 67,
+   "customer_id": 79,
+   "amount": 23.0,
+   "ordered_at": "2018-03-11",
+   "status": "completed"
+  },
+  {
+   "id": 68,
+   "customer_id": 53,
+   "amount": 16.0,
+   "ordered_at": "2018-03-11",
+   "status": "completed"
+  },
+  {
+   "id": 69,
+   "customer_id": 3,
+   "amount": 19.0,
+   "ordered_at": "2018-03-11",
+   "status": "completed"
+  },
+  {
+   "id": 70,
+   "customer_id": 8,
+   "amount": 26.0,
+   "ordered_at": "2018-03-12",
+   "status": "completed"
+  },
+  {
+   "id": 71,
+   "customer_id": 42,
+   "amount": 5.0,
+   "ordered_at": "2018-03-12",
+   "status": "shipped"
+  },
+  {
+   "id": 72,
+   "customer_id": 30,
+   "amount": 29.0,
+   "ordered_at": "2018-03-14",
+   "status": "shipped"
+  },
+  {
+   "id": 73,
+   "customer_id": 19,
+   "amount": 3.0,
+   "ordered_at": "2018-03-16",
+   "status": "completed"
+  },
+  {
+   "id": 74,
+   "customer_id": 9,
+   "amount": 30.0,
+   "ordered_at": "2018-03-17",
+   "status": "shipped"
+  },
+  {
+   "id": 75,
+   "customer_id": 69,
+   "amount": 19.0,
+   "ordered_at": "2018-03-18",
+   "status": "completed"
+  },
+  {
+   "id": 76,
+   "customer_id": 25,
+   "amount": 2.0,
+   "ordered_at": "2018-03-20",
+   "status": "completed"
+  },
+  {
+   "id": 77,
+   "customer_id": 35,
+   "amount": 19.0,
+   "ordered_at": "2018-03-21",
+   "status": "shipped"
+  },
+  {
+   "id": 78,
+   "customer_id": 90,
+   "amount": 26.0,
+   "ordered_at": "2018-03-23",
+   "status": "shipped"
+  },
+  {
+   "id": 79,
+   "customer_id": 52,
+   "amount": 27.0,
+   "ordered_at": "2018-03-23",
+   "status": "shipped"
+  },
+  {
+   "id": 80,
+   "customer_id": 11,
+   "amount": 3.0,
+   "ordered_at": "2018-03-23",
+   "status": "shipped"
+  },
+  {
+   "id": 81,
+   "customer_id": 76,
+   "amount": 2.0,
+   "ordered_at": "2018-03-23",
+   "status": "shipped"
+  },
+  {
+   "id": 82,
+   "customer_id": 46,
+   "amount": 8.0,
+   "ordered_at": "2018-03-24",
+   "status": "shipped"
+  },
+  {
+   "id": 83,
+   "customer_id": 54,
+   "amount": 1.0,
+   "ordered_at": "2018-03-24",
+   "status": "shipped"
+  },
+  {
+   "id": 84,
+   "customer_id": 70,
+   "amount": 25.0,
+   "ordered_at": "2018-03-26",
+   "status": "placed"
+  },
+  {
+   "id": 85,
+   "customer_id": 47,
+   "amount": 17.0,
+   "ordered_at": "2018-03-26",
+   "status": "shipped"
+  },
+  {
+   "id": 86,
+   "customer_id": 68,
+   "amount": 23.0,
+   "ordered_at": "2018-03-26",
+   "status": "placed"
+  },
+  {
+   "id": 87,
+   "customer_id": 46,
+   "amount": 56.0,
+   "ordered_at": "2018-03-27",
+   "status": "placed"
+  },
+  {
+   "id": 88,
+   "customer_id": 91,
+   "amount": 29.0,
+   "ordered_at": "2018-03-27",
+   "status": "shipped"
+  },
+  {
+   "id": 89,
+   "customer_id": 21,
+   "amount": 22.0,
+   "ordered_at": "2018-03-28",
+   "status": "placed"
+  },
+  {
+   "id": 90,
+   "customer_id": 66,
+   "amount": 2.0,
+   "ordered_at": "2018-03-30",
+   "status": "shipped"
+  },
+  {
+   "id": 91,
+   "customer_id": 47,
+   "amount": 19.0,
+   "ordered_at": "2018-03-31",
+   "status": "placed"
+  },
+  {
+   "id": 92,
+   "customer_id": 84,
+   "amount": 17.0,
+   "ordered_at": "2018-04-02",
+   "status": "placed"
+  },
+  {
+   "id": 93,
+   "customer_id": 66,
+   "amount": 26.0,
+   "ordered_at": "2018-04-03",
+   "status": "placed"
+  },
+  {
+   "id": 94,
+   "customer_id": 63,
+   "amount": 7.0,
+   "ordered_at": "2018-04-03",
+   "status": "placed"
+  },
+  {
+   "id": 95,
+   "customer_id": 27,
+   "amount": 24.0,
+   "ordered_at": "2018-04-04",
+   "status": "placed"
+  },
+  {
+   "id": 96,
+   "customer_id": 90,
+   "amount": 17.0,
+   "ordered_at": "2018-04-06",
+   "status": "placed"
+  },
+  {
+   "id": 97,
+   "customer_id": 89,
+   "amount": 14.0,
+   "ordered_at": "2018-04-07",
+   "status": "placed"
+  },
+  {
+   "id": 98,
+   "customer_id": 41,
+   "amount": 10.0,
+   "ordered_at": "2018-04-07",
+   "status": "placed"
+  },
+  {
+   "id": 99,
+   "customer_id": 85,
+   "amount": 24.0,
+   "ordered_at": "2018-04-09",
+   "status": "placed"
+  }
+ ]
+}

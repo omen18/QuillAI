@@ -1,0 +1,27 @@
+[package]
+name = "quill-core-base"
+version = "0.2.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Shared MDL manifest types for the Quill semantic engine"
+homepage = "https://github.com/omen18/Quill"
+repository = "https://github.com/omen18/Quill"
+keywords = ["sql", "semantic-layer", "mdl", "manifest", "quill"]
+categories = ["database"]
+
+[features]
+python-binding = ["dep:pyo3"]
+default = []
+
+[dependencies]
+pyo3 = { version = "0.29.0", features = ["extension-module"], optional = true }
+serde = { version = "1.0.201", features = ["derive", "rc"] }
+quill-manifest-macro = { path = "manifest-macro", version = "0.2.0" }
+serde_json = { version = "1.0.117" }
+serde_with = { version = "3.11.0" }
+sqlparser = { version = "0.58.0", features = ["visitor"] }
+
+
+[lib]
+name = "quill_core_base"
+path = "src/lib.rs"

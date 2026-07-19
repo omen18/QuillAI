@@ -1,0 +1,38 @@
+{
+  "name": "quill",
+  "owner": {
+    "name": "Yash Raj Sharan",
+    "email": "yashrajsharan@gmail.com"
+  },
+  "metadata": {
+    "description": "Quill Engine — discovery stub for AI agents. Actual workflow guides and prompt helpers ship inside the quill CLI (pip install quill) and are served by `quill skills get` / `quill ask`."
+  },
+  "plugins": [
+    {
+      "name": "quill",
+      "source": ".",
+      "description": "Quill CLI for AI agents — semantic SQL over 22+ databases. Installs a single discovery stub that points the agent at the quill CLI for all workflow content.",
+      "version": "1.0.0",
+      "keywords": [
+        "quill",
+        "sql",
+        "mdl",
+        "cli",
+        "semantic-layer",
+        "postgres",
+        "bigquery",
+        "snowflake",
+        "mysql",
+        "clickhouse",
+        "trino",
+        "mssql",
+        "databricks",
+        "redshift",
+        "spark",
+        "athena",
+        "oracle",
+        "duckdb"
+      ]
+    }
+  ]
+}

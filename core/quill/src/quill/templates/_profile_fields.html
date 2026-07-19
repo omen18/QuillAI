@@ -1,0 +1,60 @@
+{% if fields %}
+  {% if variants %}
+  <div class="form-group">
+    <label for="variant-select">Type</label>
+    <select name="_variant"
+            id="variant-select"
+            hx-get="/fields"
+            hx-target="#fields"
+            hx-swap="innerHTML"
+            hx-trigger="change"
+            hx-include="[name='datasource'],[name='_variant']">
+      {% for v in variants %}
+      <option value="{{ v }}" {% if v == current_variant %}selected{% endif %}>{{ v }}</option>
+      {% endfor %}
+    </select>
+  </div>
+  {% endif %}
+
+  {% for field in fields %}
+    {% if field.input_type == 'hidden' %}
+      <input type="hidden" name="{{ field.name }}" value="{{ field.default if field.default is not none else '' }}">
+    {% elif field.input_type == 'file_base64' %}
+      <div class="form-group">
+        <label>{{ field.label }}</label>
+        <input type="hidden" name="{{ field.name }}" id="fb64-{{ field.name }}" value="">
+        
+        <div class="file-input-wrapper">
+          <label for="fb64-file-{{ field.name }}" class="file-upload-btn">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right:4px"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+            Choose File...
+          </label>
+          <input type="file" id="fb64-file-{{ field.name }}"
+                 {% if field.accept %}accept="{{ field.accept }}"{% endif %}
+                 onchange="handleFileBase64(this, '{{ field.name }}')">
+        </div>
+        
+        <span class="fb64-status" id="fb64-status-{{ field.name }}"></span>
+        {% if field.hint %}
+          <span class="hint-text">{{ field.hint }}</span>
+        {% endif %}
+      </div>
+    {% else %}
+      <div class="form-group">
+        <label for="field-{{ field.name }}">{{ field.label }}</label>
+        <input type="{{ field.input_type }}" name="{{ field.name }}" id="field-{{ field.name }}"
+               placeholder="{{ field.placeholder or '' }}"
+               value="{{ field.default if field.default is not none else '' }}">
+        {% if field.hint %}
+          <span class="hint-text">{{ field.hint }}</span>
+        {% endif %}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% elif datasource %}
+  <div class="form-group">
+    <label for="json-textarea">Connection JSON</label>
+    <textarea id="json-textarea" name="_json" rows="5" placeholder='{"key": "value"}'></textarea>
+    <span class="hint-text">No predefined fields for <code>{{ datasource }}</code>. Please enter the parameters in raw JSON format.</span>
+  </div>
+{% endif %}

@@ -1,0 +1,399 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Quill – Add Profile</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+  <!-- HTMX -->
+  <script src="https://unpkg.com/htmx.org@1.9.12"></script>
+  
+  <style>
+    :root {
+      --bg-gradient: linear-gradient(135deg, #09090b 0%, #111019 50%, #03001e 100%);
+      --accent-color: #8b5cf6;
+      --accent-gradient: linear-gradient(135deg, #6366f1, #a855f7);
+      --card-bg: rgba(20, 20, 27, 0.7);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --input-bg: rgba(10, 10, 15, 0.8);
+      --text-color: #f4f4f5;
+      --text-muted: #a1a1aa;
+      --success-color: #10b981;
+      --error-color: #ef4444;
+      --font-title: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      --font-body: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg-gradient);
+      color: var(--text-color);
+      font-family: var(--font-body);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem 1rem;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    /* Ambient background glow points */
+    body::before {
+      content: "";
+      position: absolute;
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(0,0,0,0) 70%);
+      top: -10%;
+      left: -10%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    body::after {
+      content: "";
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(168, 85, 247, 0.12) 0%, rgba(0,0,0,0) 70%);
+      bottom: -10%;
+      right: -10%;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 540px;
+      z-index: 10;
+      position: relative;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 24px;
+      padding: 2.5rem;
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      border-color: rgba(139, 92, 246, 0.2);
+      box-shadow: 0 25px 50px -12px rgba(139, 92, 246, 0.1);
+    }
+
+    .header-group {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .logo-glow {
+      display: inline-block;
+      width: 48px;
+      height: 48px;
+      background: var(--accent-gradient);
+      border-radius: 12px;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 20px rgba(139, 92, 246, 0.4);
+      position: relative;
+    }
+
+    .logo-glow::after {
+      content: "Q";
+      position: absolute;
+      color: #fff;
+      font-family: var(--font-title);
+      font-size: 1.6rem;
+      font-weight: 800;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    h2 {
+      font-family: var(--font-title);
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(to right, #ffffff, #d8b4fe);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .subtitle {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .subtitle strong {
+      color: #e9d5ff;
+      font-weight: 600;
+    }
+
+    /* Form Fields Styling */
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #c084fc;
+      margin-left: 2px;
+      display: block;
+      margin-bottom: 0.4rem;
+    }
+
+    select, input[type="text"], input[type="password"], textarea {
+      width: 100%;
+      background: var(--input-bg);
+      border: 1px solid var(--border-color);
+      border-radius: 12px;
+      padding: 0.95rem 1.1rem;
+      font-family: var(--font-body);
+      font-size: 0.95rem;
+      color: var(--text-color);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      outline: none;
+    }
+
+    select {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23a1a1aa'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 1.1rem center;
+      background-size: 1.1rem;
+      padding-right: 2.8rem;
+    }
+
+    select:focus, input:focus, textarea:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.15), 0 0 15px rgba(139, 92, 246, 0.2);
+      background: rgba(10, 10, 15, 0.9);
+    }
+
+    /* Custom style for file input */
+    .file-input-wrapper {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    input[type="file"] {
+      display: none;
+    }
+
+    .file-upload-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px dashed rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      padding: 1rem;
+      cursor: pointer;
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      transition: all 0.2s ease;
+    }
+
+    .file-upload-btn:hover {
+      background: rgba(255, 255, 255, 0.05);
+      border-color: var(--accent-color);
+      color: var(--text-color);
+    }
+
+    /* Action Buttons */
+    button[type="submit"] {
+      background: var(--accent-gradient);
+      color: #ffffff;
+      border: none;
+      border-radius: 12px;
+      padding: 1.1rem;
+      font-family: var(--font-title);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 4px 20px rgba(139, 92, 246, 0.3);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 0.5rem;
+      width: 100%;
+    }
+
+    button[type="submit"]:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(139, 92, 246, 0.45);
+      filter: brightness(1.1);
+    }
+
+    button[type="submit"]:active {
+      transform: translateY(0);
+    }
+
+    /* Result box styling */
+    #result {
+      margin-top: 1.5rem;
+      border-radius: 12px;
+      transition: all 0.3s ease;
+    }
+
+    .alert {
+      padding: 1.1rem;
+      border-radius: 12px;
+      font-size: 0.92rem;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .alert-success {
+      background: rgba(16, 185, 129, 0.08);
+      border: 1px solid rgba(16, 185, 129, 0.2);
+      color: #34d399;
+      box-shadow: 0 4px 15px rgba(16, 185, 129, 0.05);
+    }
+
+    .alert-error {
+      background: rgba(239, 68, 68, 0.08);
+      border: 1px solid rgba(239, 68, 68, 0.2);
+      color: #fca5a5;
+      box-shadow: 0 4px 15px rgba(239, 68, 68, 0.05);
+    }
+
+    .alert-error code {
+      background: rgba(0, 0, 0, 0.3);
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-family: monospace;
+      color: #f87171;
+    }
+
+    /* Helper tips */
+    .hint-text {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      margin-top: 0.35rem;
+      display: block;
+    }
+
+    /* Base64 upload file loaded status indicator */
+    .fb64-status {
+      font-size: 0.8rem;
+      margin-top: 0.2rem;
+      display: block;
+      font-weight: 500;
+    }
+
+    /* Subtle loading animation helper */
+    .htmx-indicator {
+      display: none;
+    }
+    .htmx-request .htmx-indicator {
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="card">
+    <div class="header-group">
+      <div class="logo-glow"></div>
+      <h2>Add Profile</h2>
+      <p class="subtitle">
+        Configure connection for <strong>{{ profile_name }}</strong>
+      </p>
+    </div>
+
+    <form hx-post="/save" hx-target="#result" hx-swap="innerHTML">
+      <input type="hidden" name="_profile_name" value="{{ profile_name }}">
+
+      <div class="form-group">
+        <label for="datasource-select">Data Source</label>
+        <select name="datasource"
+                id="datasource-select"
+                hx-get="/fields"
+                hx-target="#fields"
+                hx-swap="innerHTML"
+                hx-trigger="change"
+                hx-include="[name='datasource']">
+          <option value="">— select —</option>
+          {% for ds in datasource_options %}
+          <option value="{{ ds }}">{{ ds }}</option>
+          {% endfor %}
+        </select>
+      </div>
+
+      <div id="fields" style="display: flex; flex-direction: column; gap: 1.2rem;"></div>
+
+      <button type="submit">Save Profile</button>
+    </form>
+    
+    <div id="result"></div>
+  </div>
+</div>
+
+<script>
+function handleFileBase64(fileInput, fieldName) {
+  var hidden = document.getElementById('fb64-' + fieldName);
+  var status = document.getElementById('fb64-status-' + fieldName);
+  var file = fileInput.files[0];
+  
+  if (!file) { 
+    hidden.value = ''; 
+    status.textContent = ''; 
+    return; 
+  }
+  
+  var reader = new FileReader();
+  reader.onload = function() {
+    var bytes = new Uint8Array(reader.result);
+    var binary = '';
+    for (var i = 0; i < bytes.length; i++) {
+      binary += String.fromCharCode(bytes[i]);
+    }
+    hidden.value = btoa(binary);
+    status.textContent = '✓ ' + file.name + ' loaded successfully';
+    status.style.color = '#10b981';
+  };
+  reader.onerror = function() {
+    hidden.value = '';
+    status.textContent = '✗ Failed to read file';
+    status.style.color = '#ef4444';
+  };
+  reader.readAsArrayBuffer(file);
+}
+</script>
+</body>
+</html>

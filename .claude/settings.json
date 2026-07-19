@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(cd quill-ui && yarn:*)",
+      "Bash(cd quill-service && just:*)",
+      "Bash(cd quill-service && poetry run:*)",
+      "Bash(cd quill-service && poetry install:*)",
+      "Bash(cd quill-launcher && make:*)",
+      "Bash(git status:*)",
+      "Bash(git diff:*)",
+      "Bash(git log:*)",
+      "Bash(git branch:*)",
+      "Bash(gh pr:*)",
+      "Bash(gh run:*)",
+      "Bash(ls:*)",
+      "Bash(wc:*)"
+    ]
+  }
+}

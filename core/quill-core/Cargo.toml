@@ -1,0 +1,37 @@
+[workspace]
+members = ["benchmarks", "core", "sqllogictest", "quill-example"]
+resolver = "2"
+
+[workspace.package]
+authors = ["Yash Raj Sharan"]
+edition = "2021"
+homepage = "https://github.com/omen18/Quill"
+license = "Apache-2.0"
+readme = "README.md"
+repository = "https://github.com/omen18/Quill"
+rust-version = "1.78"
+version = "0.2.0"
+
+[workspace.dependencies]
+async-trait = "0.1.89"
+datafusion = { version = "53", default-features = false, features = [
+    "nested_expressions",
+    "crypto_expressions",
+    "datetime_expressions",
+    "encoding_expressions",
+    "regex_expressions",
+    "unicode_expressions",
+    "parquet",
+    "sql",
+] }
+datafusion-session = { version = "53", default-features = false }
+env_logger = "0.11.10"
+hashbrown = "0.17.0"
+insta = { version = "1.41.1" }
+log = { version = "0.4.14" }
+serde = { version = "1.0.201", features = ["derive", "rc"] }
+serde_json = { version = "1.0.149" }
+serde_with = { version = "3.18.0" }
+tokio = { version = "1.46", features = ["rt", "macros"] }
+quill-core = { path = "core", package = "quill-semantic-core" }
+quill-core-base = { path = "../quill-core-base", version = "0.2.0" }

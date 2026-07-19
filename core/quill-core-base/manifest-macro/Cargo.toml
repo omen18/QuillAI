@@ -1,0 +1,23 @@
+[package]
+name = "quill-manifest-macro"
+version = "0.2.0"
+edition = "2021"
+license = "Apache-2.0"
+description = "Proc macro for generating Python-binding manifest types for the Quill semantic engine"
+homepage = "https://github.com/omen18/Quill"
+repository = "https://github.com/omen18/Quill"
+keywords = ["macro", "proc-macro", "pyo3", "quill", "mdl"]
+categories = ["development-tools::procedural-macro-helpers"]
+
+[dependencies]
+syn = { version = "2.0", default-features = false, features = [
+  "printing",
+  "parsing",
+  "proc-macro",
+] }
+quote = "1.0"
+
+[lib]
+proc-macro = true
+name = "manifest_macro"
+path = "src/lib.rs"
