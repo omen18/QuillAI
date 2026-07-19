@@ -60,7 +60,7 @@ jobs:
           echo "Syncing core/quill to quill-core-py ${version}"
           echo "VERSION=${version}" >> "$GITHUB_ENV"
 
-      - uses: astral-sh/setup-uv@v4
+      - uses: astral-sh/setup-uv@v7
 
       - name: Bump floor and relock core/quill against published quill-core-py
         working-directory: core/quill
