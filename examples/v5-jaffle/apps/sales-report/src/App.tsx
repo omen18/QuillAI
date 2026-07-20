@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { orders, customerName, snapshotEnd } from "./data";
 import { RevenueChart, MonthPoint } from "./RevenueChart";
 import { TopCustomersChart, CustomerRow } from "./TopCustomersChart";
@@ -12,6 +12,7 @@ const RANGES = [
 ] as const;
 
 type RangeKey = (typeof RANGES)[number]["key"];
+type AppState = "loading" | "permission" | "login" | "dashboard";
 
 const usd = (n: number, digits = 0) =>
   n.toLocaleString("en-US", {
@@ -27,9 +28,67 @@ const MONTH_LABEL: Record<string, string> = {
 };
 
 export default function App() {
+  // App States: loading -> permission -> login -> dashboard
+  const [appState, setAppState] = useState<AppState>("loading");
+  
+  // Loading progress states
+  const [progress, setProgress] = useState(0);
+  const [loadingStatus, setLoadingStatus] = useState("Initializing WebAssembly runtime...");
+
+  // Login states
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [loginError, setLoginError] = useState("");
+
+  // Dashboard states
   const [range, setRange] = useState<RangeKey>("all");
   const [activeTab, setActiveTab] = useState<"overview" | "transactions">("overview");
   const [searchQuery, setSearchQuery] = useState("");
+
+  // Simulated Loading Progress
+  useEffect(() => {
+    if (appState !== "loading") return;
+
+    const interval = setInterval(() => {
+      setProgress((prev) => {
+        const next = prev + Math.floor(Math.random() * 8) + 4;
+        if (next >= 100) {
+          clearInterval(interval);
+          setLoadingStatus("Complete!");
+          setTimeout(() => setAppState("permission"), 500); // transition to permission
+          return 100;
+        }
+        
+        // Update statuses based on progress percent
+        if (next < 35) {
+          setLoadingStatus("Initializing WebAssembly runtime...");
+        } else if (next < 70) {
+          setLoadingStatus("Connecting to local DuckDB database...");
+        } else {
+          setLoadingStatus("Syncing MDL context schemas...");
+        }
+        return next;
+      });
+    }, 150);
+
+    return () => clearInterval(interval);
+  }, [appState]);
+
+  // Login submit handler
+  const handleLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!username.trim() || !password.trim()) {
+      setLoginError("Please enter both username and password.");
+      return;
+    }
+    // Simple mock check
+    if (username.toLowerCase() === "admin" && password === "admin") {
+      setLoginError("");
+      setAppState("dashboard");
+    } else {
+      setLoginError("Invalid username or password. (Hint: use admin / admin)");
+    }
+  };
 
   const view = useMemo(() => {
     const days = RANGES.find((r) => r.key === range)!.days;
@@ -96,10 +155,107 @@ export default function App() {
 
   const avgOrder = view.orderCount ? view.totalRevenue / view.orderCount : 0;
 
+  // Render State 1: Simulated Loading Page
+  if (appState === "loading") {
+    return (
+      <div className="flow-container">
+        <div className="card form-card loading-card">
+          <div className="logo-glow"></div>
+          <h2>Quill BI Engine</h2>
+          <div className="progress-bar-container">
+            <div className="progress-bar-fill" style={{ width: `${progress}%` }}></div>
+          </div>
+          <div className="progress-text">{progress}%</div>
+          <p className="loading-status-text">{loadingStatus}</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Render State 2: Permission Prompt
+  if (appState === "permission") {
+    return (
+      <div className="flow-container">
+        <div className="card form-card permission-card">
+          <div className="icon-badge">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#a855f7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          </div>
+          <h2>Access Request</h2>
+          <p className="permission-desc">
+            Quill requires permission to access the local DuckDB database context and store connection profile caches in your browser.
+          </p>
+          <div className="permission-actions">
+            <button className="btn-primary" onClick={() => setAppState("login")}>
+              Grant Access
+            </button>
+            <button className="btn-secondary" onClick={() => { setProgress(0); setAppState("loading"); }}>
+              Deny
+            </button>
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Render State 3: Login Page
+  if (appState === "login") {
+    return (
+      <div className="flow-container">
+        <div className="card form-card login-card">
+          <div className="logo-glow"></div>
+          <h2>Sign In</h2>
+          <p className="login-desc">Enter credentials to open dashboard</p>
+          
+          <form onSubmit={handleLogin} className="login-form">
+            <div className="input-group">
+              <label>Username</label>
+              <input
+                type="text"
+                placeholder="Enter username"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+              />
+            </div>
+            
+            <div className="input-group">
+              <label>Password</label>
+              <input
+                type="password"
+                placeholder="Enter password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+
+            {loginError && <p className="error-message">{loginError}</p>}
+            
+            <button type="submit" className="btn-primary">
+              Log In
+            </button>
+          </form>
+          
+          <div className="credential-tip">
+            Hint: Use <code>admin</code> for both username & password.
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Render State 4: Dashboard Page
   return (
     <div className="app">
       <header className="app-header">
-        <div className="brand-badge">Quill Engine</div>
+        <div className="header-top-row">
+          <div className="brand-badge">Quill Engine</div>
+          <button className="btn-logout" onClick={() => {
+            setUsername("");
+            setPassword("");
+            setAppState("login");
+          }}>
+            Log Out
+          </button>
+        </div>
         <h1>Sales Report & Dashboard</h1>
         <p>Rebranded semantic BI layer · Connected to test.main via WebAssembly · Latest order: {snapshotEnd}</p>
       </header>
